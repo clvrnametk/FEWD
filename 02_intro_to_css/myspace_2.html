@@ -3,6 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>MySpace</title>
+    <style>
+      body {
+        background: coral;
+        color: white;
+        font-family: arial;
+      }
+      .fun_fact {
+        background: white;
+        color: black;
+      }
+      #meme{
+        width: 600px;
+      }
+      .contact{
+        font-size: 24px;
+        font-weight: bolder;
+      }
+      a {
+        color: #F6ED23;
+      }
+
+    </style>
   </head>
   <body>
     <h1>Hari's MySpace</h1>
@@ -16,16 +38,16 @@
       I like pokemon. They're really cool.
     </p>
 
-    <p>
+    <p class="fun_fact">
       <strong>Fun fact:</strong> I once trained a Magmar from level 17 to 100 in
       one day.
     </p>
 
     <p>Here is my favorite meme from the interwebz.</p>
 
-    <img src="http://i1.kym-cdn.com/photos/images/original/000/234/739/fa5.jpg" alt="Dog that has no idea what it's doing">
+    <img id="meme"src="http://i1.kym-cdn.com/photos/images/original/000/234/739/fa5.jpg" alt="Dog that has no idea what it's doing">
 
-    <p>
+    <p class="fun_fact">
       <strong>Fun fact:</strong> I can hold my breath for 37 seconds.
     </p>
 
@@ -44,8 +66,8 @@
     </p>
 
     <ul>
-      <li><a href="https://github.com/harimohanraj89">My Github Page</a></li>
-      <li><a href="https://www.facebook.com/patrickstar/">My Facebook Page</a></li>
+      <li><a class="contact" href="https://github.com/harimohanraj89">My Github Page</a></li>
+      <li><a class="contact" href="https://www.facebook.com/patrickstar/">My Facebook Page</a></li>
     </ul>
   </body>
 </html>
