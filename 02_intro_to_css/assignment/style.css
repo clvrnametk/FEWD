@@ -1,6 +1,7 @@
 body{
   margin: 0px;
   background: rgba(100, 0, 0, 0.5);
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -11,6 +12,20 @@ div {
 .header-parent{
   background: red;
   background-image: url('https://tau0.files.wordpress.com/2014/01/dark_lake_bw.jpg');
+  height: 100vh;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+.header-parent-center-v {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .intro-header {
   margin: 0 auto;
@@ -27,7 +42,7 @@ div {
   max-width: 500px;
   margin: 0 auto;
   margin-top: 0px;
-  padding: 20px;
+  padding: 40px;
   padding-top: 16px;
   padding-bottom: 4px;
   font-family: 'Merriweather', sans-serif;
@@ -36,6 +51,21 @@ div {
   line-height: 1.8em;
   color: rgba(255, 255, 255, 1);
 }
+.process-container {
+  background: rgba(240, 240, 240, 0.5);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 300px;
+}
+.process {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .divider-bar {
   margin: 0 auto;
   background: #00C69D;
@@ -43,8 +73,11 @@ div {
   height: 3px;
 }
 @media (max-width: 500px) {
-  p {
-    font-size: 14px;
+  .intro-header {
+    font-size: 16px;
+  }
+  .intro-text {
+    font-size: 12px;
   }
   .divider-bar {
     width: 60px;
