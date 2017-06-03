@@ -1,3 +1,52 @@
 body{
-
+  margin: 0px;
+  background: rgba(100, 0, 0, 0.5);
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+div {
+}
+.header-parent{
+  background: red;
+  background-image: url('https://tau0.files.wordpress.com/2014/01/dark_lake_bw.jpg');
+}
+.intro-header {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+  background: rgba(240, 240, 240, 0);
+  margin-bottom: 0px;
+  color: rgba(255, 255, 255, 1);
+}
+.intro-text {
+  background: rgba(240, 240, 240, 0);
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 0px;
+  padding: 20px;
+  padding-top: 16px;
+  padding-bottom: 4px;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 1.8em;
+  color: rgba(255, 255, 255, 1);
+}
+.divider-bar {
+  margin: 0 auto;
+  background: #00C69D;
+  width: 100px;
+  height: 3px;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 14px;
+  }
+  .divider-bar {
+    width: 60px;
+  }
 }
