@@ -14,21 +14,41 @@ a {
 a:hover {
   color: rgba(255, 0, 255, .8);
 }
-.navigation {
+.nav-parent {
   position: absolute;
   width: 100%;
   height: 60px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
 }
-.nav-list {
-  float: right;
+.nav-left {
   background: rgba(100, 0, 0, 0);
-  padding-right: 30px;
+  padding-left: 20px;
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translate(0%,-50%);
 }
-.navigation-text {
+.nav-home {
+  padding: 0px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0px;
+  vertical-align: middle;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.nav-right {
+  background: rgba(100, 0, 0, 0);
+  padding-right: 20px;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
+.nav-links {
   display: inline;
   padding: 20px;
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, 0);
   margin: 0px;
   vertical-align: middle;
   font-family: 'Open Sans', sans-serif;
