@@ -7,7 +7,12 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
-div {
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .8);
+}
+a:hover {
+  color: rgba(255, 0, 255, .8);
 }
 .navigation {
   position: absolute;
@@ -28,6 +33,7 @@ div {
   vertical-align: middle;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 .header-parent{
   background: white;
