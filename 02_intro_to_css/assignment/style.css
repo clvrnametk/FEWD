@@ -1,5 +1,5 @@
 body{
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 1);
   margin: 0px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -37,7 +37,6 @@ a:hover {
 .nav-home {
   padding: 0px;
   margin: 0px;
-  vertical-align: middle;
   /* TYPOGRAPHY */
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -172,12 +171,13 @@ a:hover {
   color: rgba(255, 255, 255, 1);
 }
 .process-container {
-  background: rgba(240, 240, 240, 0.5);
+  background-color: rgba(245, 245, 245, 1);
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 40px;
   padding-bottom: 40px;
-  height: 300px;
+  height: 460px;
+  line-height: 2em;
 }
 .process {
   position: relative;
@@ -192,6 +192,29 @@ a:hover {
   width: 100px;
   height: 3px;
 }
+.footer-parent {
+  background-color: rgba(0, 0, 0, 1);
+  height: 60px;
+  width: 100%;
+  position: relative;
+}
+/* Why doesn't this color work? */
+.footer-center {
+  background-color: rgba(255, 0, 0, 1);
+  width: 75%;
+  margin-left: 25%;
+}
+.footer-contact {
+  background-color: rgba(255, 0, 0, 0);
+  float: left;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  margin: 10px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+/* NON CONTAINTER ELEMENTS */
 .down-arrow {
   background: rgba(240, 240, 240, 0);
   margin-bottom: 0px;
@@ -202,6 +225,7 @@ a:hover {
   line-height: 0px;
   float: bottom;
 }
+/* MEDIA QUERIES */
 @media (max-width: 500px) {
   .intro-header {
     font-size: 16px;
