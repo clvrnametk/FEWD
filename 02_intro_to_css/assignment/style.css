@@ -15,8 +15,19 @@ div {
   height: 60px;
   background: rgba(0, 0, 0, 0.5);
 }
-li {
+.nav-list {
+  float: right;
+  background: rgba(100, 0, 0, 0);
+  padding-right: 30px;
+}
+.navigation-text {
   display: inline;
+  padding: 20px;
+  color: rgba(255, 255, 255, .8);
+  margin: 0px;
+  vertical-align: middle;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 .header-parent{
   background: white;
