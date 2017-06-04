@@ -1,6 +1,6 @@
 body{
-  margin: 0px;
   background: rgba(0, 0, 0, 0);
+  margin: 0px;
   font-family: 'Open Sans', sans-serif;
 }
 h1 {
@@ -10,25 +10,21 @@ h1 {
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, .8);
-  /* First we need to help some browsers along for this to work.
-   Just because a vendor prefix is there, doesn't mean it will
-   work in a browser made by that vendor either, it's just for
-   future-proofing purposes I guess. */
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  /* ...and now for the proper property */
-  transition:.5s;
+  /* TRANSITION ON: CROSS BROWSER */
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
 }
 a:hover {
   color: #00C69D;
 }
 .nav-parent {
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   width: 100%;
   height: 60px;
-  background: rgba(0, 0, 0, 0);
 }
 .nav-left {
   background: rgba(100, 0, 0, 0);
@@ -40,12 +36,13 @@ a:hover {
 }
 .nav-home {
   padding: 0px;
-  color: rgba(255, 255, 255, 0.8);
   margin: 0px;
   vertical-align: middle;
+  /* TYPOGRAPHY */
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
 }
 .nav-right {
   background: rgba(100, 0, 0, 0);
@@ -56,17 +53,22 @@ a:hover {
   transform: translate(0%,-50%);
 }
 .nav-link1:hover {
-  border-color: rgba(255, 255, 255, 0.5);
+  /* CONTAINER */
   background-color: rgba(255, 255, 255, 0.2);
-  /* HOVER ON */
+  border-color: rgba(255, 255, 255, 0.5);
+  /* HOVER ON: CROSS BROWSER */
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
   -webkit-transition:.3s;
-  /* HOVER PROPERTY */
   transition:.3s;
 }
 .nav-link1 {
+  /* CONTAINER */
+  background-color: rgba(255, 0, 0, 0);
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 1px;
   position: relative;
   float:right;
   top: 50%;
@@ -75,36 +77,36 @@ a:hover {
   text-align: center;
   padding: 10px;
   width: 100px;
-  background-color: rgba(255, 0, 0, 0);
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0);
-  border-width: 1px;
-
-  color: rgba(255, 255, 255, .8);
+  /* TYPOGRAPHY */
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  /* HOVER ON */
+  color: rgba(255, 255, 255, .8);
+  /* HOVER OFF: CROSS BROWSER */
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
   -webkit-transition:.3s;
-  /* HOVER PROPERTY */
   transition:.3s;
 }
 .nav-link2:hover {
+  /* CONTAINER */
   background-color: #00C69D;
   border-color: #00C69D;
   color: rgba(255, 255, 255, 1);
-  /* HOVER ON */
+  /* HOVER ON: CROSS BROWSER */
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
   -webkit-transition:.3s;
-  /* HOVER PROPERTY */
   transition:.3s;
 }
 .nav-link2 {
+  /* CONTAINER */
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 1px;
   position: relative;
   float:right;
   right: -65%;
@@ -113,21 +115,16 @@ a:hover {
   padding: 10px;
   width: 100px;
   height: 50%;
-  background-color: rgba(255, 255, 255, 1);
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 1);
-  border-width: 1px;
-
-  color: rgba(100, 100, 100, 1);
+  /* TYPOGRAPHY */
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
-  /* HOVER ON */
+  color: rgba(100, 100, 100, 1);
+  /* HOVER OFF: CROSS BROWSER */
   -o-transition:.3s;
   -ms-transition:.3s;
   -moz-transition:.3s;
   -webkit-transition:.3s;
-  /* HOVER PROPERTY */
   transition:.3s;
 }
 .header-parent{
@@ -135,6 +132,7 @@ a:hover {
   background-image: url('https://tau0.files.wordpress.com/2014/01/dark_lake_bw.jpg');
   height: 100vh;
   background-repeat:no-repeat;
+  /* CROSS BROWSER */
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -149,13 +147,14 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 .intro-header {
+  background: rgba(240, 240, 240, 0);
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  /* TYPOGRAPHY */
   margin: 0 auto;
   text-align: center;
   font-size: 20px;
-  padding-top: 50px;
-  padding-bottom: 0px;
-  background: rgba(240, 240, 240, 0);
-  margin-bottom: 0px;
   color: rgba(255, 255, 255, 1);
 }
 .intro-text {
