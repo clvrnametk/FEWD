@@ -15,6 +15,6 @@ ul li{
   font-family: "Comic Sans MS";
 }
 
-ol{
-
+ol li{
+  font-size: 24px;
 }
