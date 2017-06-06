@@ -11,10 +11,21 @@ code {
   color: white;
 }
 
+/* Apply style to Comic Sans MS */
 ul li{
   font-family: "Comic Sans MS";
 }
 
+/* Make all list items in ordered list bigger (24px) */
 ol li{
   font-size: 24px;
+}
+/* Make all <code> tags inside announcekents black text on white background*/
+.announcement code{
+  background-color: white;
+  color: black;
+}
+
+p:last-child {
+  color: blue;
 }
