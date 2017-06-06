@@ -1,14 +1,37 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: arial;
+body {
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: arial;
+  background-color: lightgrey;
+  padding-left: 6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+ol {
+  background-color: beige;
+  margin-bottom: 12px;
+}
+
+ul {
+  background-color: beige;
+  margin-bottom: 16px;
+}
 code {
   background-color: lightgray;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .announcement {
   background-color: indianred;
   color: white;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  padding: 24px 48px;
 }
 
 /* Apply style to Comic Sans MS */
@@ -28,4 +51,9 @@ ol li{
 
 p:last-child {
   color: blue;
+}
+
+.test {
+  margin: 20px;
+
 }
