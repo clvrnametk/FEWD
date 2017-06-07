@@ -9,6 +9,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 6px;
   padding-top: 12px;
   padding-bottom: 12px;
+  /* block :: Use margin left and margin right to center <li> */
+  /*  margin: 0 auto; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 code {
@@ -48,7 +54,21 @@ p:last-child {
   color: blue;
 }
 
-.test {
-  margin: 20px;
+.nav-items-ul {
+  /* inline:: Text-align the parent to align the children <li> */
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.nav-item-li {
+  /* Display Things next to each other */
+  display: inline;
+  /* Set size of the nav items */
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-top: 6px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-left: 20px;
 
 }
