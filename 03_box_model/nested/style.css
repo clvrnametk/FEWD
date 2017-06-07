@@ -11,15 +11,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 12px;
 }
 
-ol {
-  background-color: beige;
-  margin-bottom: 12px;
-}
-
-ul {
-  background-color: beige;
-  margin-bottom: 16px;
-}
 code {
   background-color: lightgray;
   padding-left: 12px;
@@ -37,11 +28,15 @@ code {
 /* Apply style to Comic Sans MS */
 ul li{
   font-family: "Comic Sans MS";
+  background-color: beige;
+  margin-bottom: 16px;
 }
 
 /* Make all list items in ordered list bigger (24px) */
 ol li{
   font-size: 24px;
+  background-color: beige;
+  margin-bottom: 12px;
 }
 /* Make all <code> tags inside announcekents black text on white background*/
 .announcement code{
