@@ -29,6 +29,8 @@ section {
   height: 200px;
   float: left;
   text-align: center;
+  box-sizing: border-box;
+  padding-left: 1px;
 }
 
 /* Clear Fixes */
