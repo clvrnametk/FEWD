@@ -3,11 +3,11 @@ body {
   font-family: Arial;
   font-size: 24px;
 }
-
 section {
   padding: 100px;
 }
 
+/* Columns */
 .two-columns {
   background: slategray;
 }
@@ -16,26 +16,117 @@ section {
   background: lightgray;
 }
 
-.color {
-  height: 200px;
+.four-columns-a {
+  background: slategray;
 }
 
+.four-columns-b {
+  background: lightgray;
+}
+
+/* Global Columns */
+.color {
+  height: 200px;
+  float: left;
+  text-align: center;
+}
+
+/* Clear Fixes */
+.two-columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.three-columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.four-columns-a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.four-columns-b:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 200px;
+}
+
+/* Two Column Colors */
 .red {
   background: firebrick;
+  width: 50%;
 }
 
 .blue {
   background: navy;
+  width: 50%;
 }
 
+/* Three Column Colors */
 .orange {
   background: orange;
+  width: 33.3%;
 }
 
 .yellow {
   background: gold;
+  width: 33.3%;
 }
 
 .green {
   background: forestgreen;
+  width: 33.3%;
+}
+
+/* Four A Column Colors */
+.brown {
+  background: brown;
+  width: 25%;
+}
+
+.black {
+  background: black;
+  width: 25%;
+}
+
+.brick {
+  background: pink;
+  width: 25%;
+}
+
+.grey {
+  background: grey;
+  width: 25%;
+}
+
+/* Four B Column Colors */
+.brown-b {
+  background: brown;
+  width: 50%;
+}
+
+.black-b {
+  background: black;
+  width: 50%;
+}
+
+.brick-b {
+  background: pink;
+  width: 50%;
+}
+
+.grey-b {
+  background: grey;
+  width: 50%;
 }
