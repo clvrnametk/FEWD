@@ -1,4 +1,4 @@
-/*things in here*/
+/* things in here */
 header {
   min-height: 600px;
   background-color: lightblue;
@@ -29,7 +29,12 @@ footer {
   background-color: papayawhip;
 }
 
-/*Clearfix all the things*/
+/* Set Global Width for all Sections */
+.global-width {
+  width: 100%;
+}
+
+/* Clearfix all the things */
 header,
 #vp-parent,
 #benefits-parent,
