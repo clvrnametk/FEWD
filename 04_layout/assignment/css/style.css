@@ -1,8 +1,18 @@
-/* things in here */
+/* Header Section Styling */
 header {
   min-height: 600px;
+  background-image: url('../images/01_header_bg.jpg');
   background-color: lightblue;
+  /* Image Size Cover + Cross Browser Support */
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  /* background-position:center; */
 }
+
+
 
 #vp-parent {
   height: 400px;
