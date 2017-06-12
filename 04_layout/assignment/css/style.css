@@ -4,24 +4,24 @@ header {
   background-color: lightblue;
 }
 
-#value-proposition {
+#vp-parent {
   height: 400px;
   background-color: papayawhip;
 }
 
-#benefits {
+#benefits-parent {
   height: 400px;
   background-color: lightblue;
 }
 
-#testimonial {
+#testimonial-parent {
   height: 400px;
   background-color: papayawhip;
 }
 
-aside {
+#signup-parent {
   height: 400px;
-  background-color: lightblue;
+  background-color: yellow;
 }
 
 footer {
