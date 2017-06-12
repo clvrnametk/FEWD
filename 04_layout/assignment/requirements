@@ -1,0 +1,14 @@
+CORE REQUIREMENTS
+• Create all sections of the mockup
+• Create multi-column layouts in the web page
+• Use an external CSS stylesheet to style your pages
+• Use either normalize.css or reset.css to reset your browser's default styles
+• Modify the box-sizing property of relevant elements to avoid nasty math
+• Follow naming conventions, maintain consistency across your .html and .css files
+• Indent nested elements to increase your code's readability
+
+BONUS REQS
+• Create and link to a second page, the Relaxr Blog.
+  - The blog should have a two column layout
+  - The left column should contain a few blog posts
+  - The right column should contain a paragraph about Relaxr, an image of the Relaxr office, and a few links to Relaxr's partners (get creative)

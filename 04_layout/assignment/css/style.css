@@ -1,1 +1,30 @@
 /*things in here*/
+header {
+  height: 400px;
+  background-color: lightblue;
+}
+
+#value-proposition {
+  height: 400px;
+  background-color: papayawhip;
+}
+
+#benefits {
+  height: 400px;
+  background-color: lightblue;
+}
+
+#testimonial {
+  height: 400px;
+  background-color: papayawhip;
+}
+
+aside {
+  height: 400px;
+  background-color: lightblue;
+}
+
+footer {
+  height: 400px;
+  background-color: papayawhip;
+}
