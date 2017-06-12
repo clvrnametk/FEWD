@@ -1,6 +1,6 @@
 /*things in here*/
 header {
-  height: 400px;
+  min-height: 600px;
   background-color: lightblue;
 }
 
@@ -27,4 +27,27 @@ header {
 footer {
   height: 400px;
   background-color: papayawhip;
+}
+
+/*Clearfix all the things*/
+header,
+#vp-parent,
+#benefits-parent,
+#testimonial-parent,
+#signup-parent,
+footer
+ {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 320px) {
+
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 768px) {
+
 }
