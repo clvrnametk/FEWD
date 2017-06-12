@@ -1,0 +1,97 @@
+
+
+.section-one,
+.section-two,
+.section-three {
+  min-height: 200px;
+}
+
+.section-one {
+  background-color: lightgrey;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.section-two {
+  background-color: darkgrey;
+}
+
+.section-three {
+  background-color: lightgrey;
+}
+
+.s1-b1,
+.s1-b2,
+.s1-b3 {
+  height: 300px;
+  width: 100%;
+}
+
+.s2-b1,
+.s2-b2,
+.s2-b3 {
+  height: 300px;
+  width: 33.3%;
+}
+
+.s3-b1,
+.s3-b2,
+.s3-b3 {
+  height: 300px;
+  width: 33.3%;
+}
+
+.parent-s1-b1 {
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.parent-s1-b2 {
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.parent-s1-b3 {
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.s1-b1 {
+  background-color: cyan;
+}
+
+.s1-b2 {
+  background-color: yellow;
+}
+
+.s1-b3 {
+  background-color: magenta;
+}
+
+/* Clear Fixes */
+.section-one:after,
+.section-two:after,
+.section-three:after
+ {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 500px) {
+  .s1-b1,
+  .s1-b2,
+  .s1-b3 {
+    width: 100%;
+  }
+}

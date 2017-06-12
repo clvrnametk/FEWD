@@ -25,6 +25,7 @@ section {
 }
 
 /* Global Columns */
+/* BOX SIZING: BOARDEWR-BOX TRICK */
 .color {
   height: 200px;
   float: left;
@@ -131,4 +132,17 @@ span {
 .grey-b {
   background: grey;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .red {
+    background: firebrick;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .blue {
+    background: navy;
+    width: 100%;
+  }
+
 }
