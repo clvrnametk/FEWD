@@ -125,7 +125,7 @@ both the div and the img tag to work */
 .benefits-header {
   /* Positioning */
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   /* Font Style */
   font-family: 'Open Sans', sans-serif;
   font-size: 48px;
@@ -136,7 +136,7 @@ both the div and the img tag to work */
 .benefits-txt {
   /* Positioning */
   margin-top: 0px;
-  margin-bottom: 48px;
+  margin-bottom: 44px;
   /* Font Style */
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
@@ -148,8 +148,16 @@ both the div and the img tag to work */
 .benefits-list-header {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+  margin-top: 0px;
+  margin-bottom: 44px;
 }
 
+ul {
+  padding-left: 24px;
+}
+
+/* @HARI: Not sure how to match the <li>s to the mock
+it looks like the line hieght is smaller but that does not do it */
 li {
   /* Font Style */
   font-family: 'Open Sans', sans-serif;
@@ -159,11 +167,17 @@ li {
 }
 
 .benefits-bullets-01 {
-
+  /* Positioning */
+  width: 50%;
+  float:left;
+  margin-top: 0px;
 }
 
-.benefits-bullets-01 {
-
+.benefits-bullets-02 {
+  /* Positioning */
+  width: 50%;
+  float:left;
+  margin-top: 0px;
 }
 
 
@@ -210,12 +224,15 @@ footer {
 
 /* Clearfix all the things */
 /* ----------------------- */
+/* @HARI: why does the header break when I add ':after'? */
 header,
-#vp-parent,
-#benefits-parent,
-#testimonial-parent,
-#signup-parent,
-footer
+#vp-parent:after,
+#benefits-parent:after,
+#testimonial-parent:after,
+#signup-parent:after,
+footer:after,
+.benefits-bullets-01:after,
+.benefits-bullets-02:after
  {
   content: "";
   display: table;
