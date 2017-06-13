@@ -16,7 +16,7 @@ header {
 .header-logo {
   /* Positiong */
   margin-left: 100px;
-  margin-top: 85px;
+  margin-top: 89px;
   margin-bottom: 0px;
   /* Font Style */
   font-family: 'Open Sans', sans-serif;
@@ -49,6 +49,7 @@ header {
   /* Position Button in Center */
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
   /* Center Text using flex box */
   text-align: center;
   display: flex;
@@ -65,37 +66,103 @@ header {
 }
 
 
+
+
+/* Value Prop Section Styling */
+/* -------------------------- */
+
+/* @MIKE: fix the fluid icons to align verticly */
 #vp-parent {
-  height: 400px;
-  background-color: papayawhip;
+  background-color: #1A1675;
+  box-sizing: border-box;
+  padding: 100px;
 }
 
+.vp-container {
+  width: 33.33%;
+  height: 275px;
+  float: left;
+}
+
+/* @HARI: Not sure why I have to add this to
+both the div and the img tag to work */
+.vp-icon {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vp-txt {
+  /* Center Text using flex box */
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; /* column | row */
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  /* Turn off Text Cursor */
+  cursor:default;
+}
+
+
+
+/* Benefits Section Styling */
+/* ------------------------ */
 #benefits-parent {
   height: 400px;
   background-color: lightblue;
 }
 
+
+
+
+/* Testimonial Section Styling */
+/* --------------------------- */
 #testimonial-parent {
   height: 400px;
   background-color: papayawhip;
 }
 
+
+
+
+/* Signup Section Styling */
+/* ---------------------- */
 #signup-parent {
   height: 400px;
   background-color: yellow;
 }
 
+
+
+
+/* Footer Section Styling */
+/* ---------------------- */
 footer {
   height: 400px;
   background-color: papayawhip;
 }
 
+
+
+
 /* Set Global Width for all Sections */
+/* --------------------------------- */
 .global-width {
   width: 100%;
 }
 
+
+
+
 /* Clearfix all the things */
+/* ----------------------- */
 header,
 #vp-parent,
 #benefits-parent,
@@ -108,12 +175,20 @@ footer
   clear: both;
 }
 
+
+
+
 /* Mobile Breakpoint */
+/* ----------------- */
 @media (max-width: 320px) {
 
 }
 
+
+
+
 /* Tablet Breakpoint */
+/* ----------------- */
 @media (max-width: 768px) {
 
 }
