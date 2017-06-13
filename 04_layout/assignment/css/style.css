@@ -1,4 +1,5 @@
 /* Header Section Styling */
+/* ---------------------- */
 header {
   min-height: 600px;
   background-image: url('../images/01_header_bg.jpg');
@@ -12,6 +13,56 @@ header {
   /* background-position:center; */
 }
 
+.header-logo {
+  /* Positiong */
+  margin-left: 100px;
+  margin-top: 85px;
+  margin-bottom: 0px;
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.header-txt {
+  /* Font Style */
+  text-align: center;
+  margin-top: 37px;
+  margin-bottom: 48px;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 60px;
+  color: white;
+}
+
+.header-btn {
+  /* Box Sizing & Style */
+  box-sizing: border-box;
+  width: 228px;
+  height: 57px;
+  border-radius: 6px;
+  background-color: #FFD700;
+  /* Position Button in Center */
+  margin-left: auto;
+  margin-right: auto;
+  /* Center Text using flex box */
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; /* column | row */
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1A1675;
+  /* Turn off Text Cursor */
+  cursor:default;
+}
 
 
 #vp-parent {
