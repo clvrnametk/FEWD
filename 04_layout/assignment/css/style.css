@@ -1,6 +1,6 @@
-/* Header Section Styling */
-/* ---------------------- */
-header {
+/* Home: Header Section Styling */
+/* ---------------------------- */
+.home-header {
   min-height: 600px;
   background-image: url('../images/01_header_bg.jpg');
   background-color: lightblue;
@@ -95,8 +95,8 @@ div to link without making the margin auto part of the link */
 
 
 
-/* Value Prop Section Styling */
-/* -------------------------- */
+/* Home: Value Prop Section Styling */
+/* -------------------------------- */
 
 /* @MIKE: fix the fluid icons to align verticly */
 #vp-parent {
@@ -140,8 +140,8 @@ both the div and the img tag to work */
 
 
 
-/* Benefits Section Styling */
-/* ------------------------ */
+/* Home: Benefits Section Styling */
+/* ------------------------------ */
 #benefits-parent {
   min-height: 400px;
   background-color: white;
@@ -211,8 +211,8 @@ li {
 
 
 
-/* Testimonial Section Styling */
-/* --------------------------- */
+/* Home: Testimonial Section Styling */
+/* --------------------------------- */
 #testimonial-parent {
   /* Image and Color */
   background-color: papayawhip;
@@ -260,8 +260,8 @@ li {
 
 
 
-/* Signup Section Styling */
-/* ---------------------- */
+/* Home: Signup Section Styling */
+/* ---------------------------- */
 #sign-up-parent {
   min-height: 100px;
   background-color: #FFD700;
@@ -324,8 +324,115 @@ a {
 
 
 
-/* Footer Section Styling */
-/* ---------------------- */
+/* Blog: Header Section Styling */
+/* ---------------------------- */
+.blog-header {
+  min-height: 60px;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+
+.blog-header-logo {
+  /* Positiong */
+float: left;
+ /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+
+}
+
+.blog-header-btn-parent {
+  /* Box Sizing & Style */
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+}
+
+.blog-header-btn {
+  /* Box Position */
+  float: right;
+  /* Box Sizing & Style */
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  border-radius: 1px;
+  background-color: rgba(255, 255, 255, 0);
+  /* Center Text using flex box */
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; /* column | row */
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+  /* Turn off Text Cursor */
+  text-decoration: none;
+  /* HOVER OFF: CROSS BROWSER */
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+
+.blog-header-btn:hover {
+  /* CONTAINER */
+  background-color: rgba(255, 255, 255, 0.6);
+  /* border-color: rgba(255, 255, 255, 0.5); */
+  /* HOVER ON: CROSS BROWSER */
+  -o-transition:.3s;
+  -ms-transition:.3s;
+  -moz-transition:.3s;
+  -webkit-transition:.3s;
+  transition:.3s;
+}
+
+
+.blog-header-btn-copy {
+  letter-spacing: 1.5px;
+}
+
+
+
+
+/* Blog: Main Section Styling */
+/* ---------------------------- */
+.blog-main-parent {
+  min-height: 400px;
+  background-color: cyan;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+}
+
+.blog-left-parent {
+  min-height: 400px;
+  background-color: yellow;
+  width: 66.66%;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.blog-right-parent {
+  min-height: 400px;
+  background-color: magenta;
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+
+
+
+/* Global: Footer Section Styling */
+/* ------------------------------ */
 footer {
   min-height: 200px;
   background-color: black;
@@ -408,7 +515,8 @@ header, /* @HARI: why does this break when I add ':after'? */
 .footer-adjust:after,
 .benefits-bullets-01:after,
 .benefits-bullets-02:after,
-.footer-social-parent:after
+.footer-social-parent:after,
+.blog-header:after
  {
   content: "";
   display: table;
@@ -418,8 +526,8 @@ header, /* @HARI: why does this break when I add ':after'? */
 
 
 
-/* Tablet Breakpoint: 768px */
-/* ------------------------ */
+/* Home: Tablet Breakpoint: 768px */
+/* ------------------------------ */
 @media (max-width: 768px) {
 
   /* Header Section */
@@ -440,8 +548,8 @@ header, /* @HARI: why does this break when I add ':after'? */
 
 
 
-/* Mobile Breakpoint: 380px */
-/* ------------------------ */
+/* Home: Mobile Breakpoint: 380px */
+/* ------------------------------ */
 /* @HARI: This is not working :( */
 @media (max-width: 380px) {
   /* Header Section */
