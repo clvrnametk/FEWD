@@ -115,8 +115,55 @@ both the div and the img tag to work */
 /* Benefits Section Styling */
 /* ------------------------ */
 #benefits-parent {
-  height: 400px;
-  background-color: lightblue;
+  min-height: 400px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 100px;
+
+}
+
+.benefits-header {
+  /* Positioning */
+  margin-top: 0px;
+  margin-bottom: 20px;
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: #1A1675;
+}
+
+.benefits-txt {
+  /* Positioning */
+  margin-top: 0px;
+  margin-bottom: 48px;
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+  color: black;
+}
+
+.benefits-list-header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+li {
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: black;
+}
+
+.benefits-bullets-01 {
+
+}
+
+.benefits-bullets-01 {
+
 }
 
 
