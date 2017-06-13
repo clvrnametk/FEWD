@@ -39,6 +39,19 @@ header {
   color: white;
 }
 
+/* @HARI: Is this code bloat? It was the only way I could get the
+div to link without making the margin auto part of the link */
+.header-btn-parent {
+  /* Box Sizing & Style */
+  box-sizing: border-box;
+  width: 228px;
+  height: 57px;
+  /* Position Button in Center */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
 .header-btn {
   /* Box Sizing & Style */
   box-sizing: border-box;
@@ -46,10 +59,6 @@ header {
   height: 57px;
   border-radius: 6px;
   background-color: #FFD700;
-  /* Position Button in Center */
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
   /* Center Text using flex box */
   text-align: center;
   display: flex;
@@ -67,7 +76,6 @@ header {
 
 
 
-
 /* Value Prop Section Styling */
 /* -------------------------- */
 
@@ -79,7 +87,7 @@ header {
 }
 
 .vp-container {
-  width: 33.33%;
+  width: 33.33%; /* @HARI: I know this is 33% on the original */
   height: 275px;
   float: left;
 }
@@ -109,6 +117,7 @@ both the div and the img tag to work */
   /* Turn off Text Cursor */
   cursor:default;
 }
+
 
 
 
@@ -242,6 +251,16 @@ li {
 }
 
 /* @HARI: How do I exclude the margin from being clickable? */
+.sign-up-btn-parent {
+  /* Box Sizing & Style */
+  box-sizing: border-box;
+  width: 228px;
+  height: 57px;
+  /* Position Button in Center */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .sign-up-btn {
   /* Box Sizing & Style */
   box-sizing: border-box;
@@ -249,9 +268,6 @@ li {
   height: 57px;
   border-radius: 6px;
   background-color: #1A1675;
-  /* Position Button in Center */
-  margin-left: auto;
-  margin-right: auto;
   /* Center Text using flex box */
   text-align: center;
   display: flex;
@@ -269,6 +285,9 @@ li {
 a {
   text-decoration: none;
 }
+
+
+
 
 /* Footer Section Styling */
 /* ---------------------- */
@@ -346,8 +365,7 @@ footer {
 
 /* Clearfix all the things */
 /* ----------------------- */
-/* @HARI: why does the header break when I add ':after'? */
-header,
+header, /* @HARI: why does this break when I add ':after'? */
 #vp-parent:after,
 #benefits-parent:after,
 #testimonial-parent:after,
