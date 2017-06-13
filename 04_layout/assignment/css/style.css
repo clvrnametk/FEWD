@@ -62,7 +62,7 @@ header {
   font-weight: 800;
   color: #1A1675;
   /* Turn off Text Cursor */
-  cursor:default;
+  text-decoration: none;
 }
 
 
@@ -186,8 +186,47 @@ li {
 /* Testimonial Section Styling */
 /* --------------------------- */
 #testimonial-parent {
-  height: 400px;
+  /* Image and Color */
   background-color: papayawhip;
+  background-image: url('../images/03_testimonial_bg.jpg');
+  /* Size and positioning */
+  min-height: 400px;
+  padding: 100px;
+  box-sizing: border-box;
+  /* Image Size Cover + Cross Browser Support */
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  /* background-position:center; */
+}
+
+.testimonial-quote {
+  /* Positioning */
+  margin-top: 0px;
+  margin-bottom: 30px;
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+}
+
+.testimonial-name{
+  /* Positioning */
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 48px;
+  text-align: center;
+  color: white;
 }
 
 
@@ -195,19 +234,102 @@ li {
 
 /* Signup Section Styling */
 /* ---------------------- */
-#signup-parent {
-  height: 400px;
-  background-color: yellow;
+#sign-up-parent {
+  min-height: 100px;
+  background-color: #FFD700;
+  box-sizing: border-box;
+  padding:30px;
 }
 
+/* @HARI: How do I exclude the margin from being clickable? */
+.sign-up-btn {
+  /* Box Sizing & Style */
+  box-sizing: border-box;
+  width: 228px;
+  height: 57px;
+  border-radius: 6px;
+  background-color: #1A1675;
+  /* Position Button in Center */
+  margin-left: auto;
+  margin-right: auto;
+  /* Center Text using flex box */
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-content:center;
+  flex-direction:column; /* column | row */
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  /* Turn off Text Cursor */
+}
 
-
+a {
+  text-decoration: none;
+}
 
 /* Footer Section Styling */
 /* ---------------------- */
 footer {
-  height: 400px;
-  background-color: papayawhip;
+  min-height: 200px;
+  background-color: black;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.footer-logo {
+  /* Positiong */
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #FFD700;
+}
+
+.footer-social-parent {
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  background: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-social-fb {
+  width: 60px;
+  height: 40px;
+  float: left;
+  background-color: none;
+  display: inline;
+  text-align: center;
+}
+
+.footer-social-twitter {
+  width: 60px;
+  height: 40px;
+  float: left;
+  background-color: none;
+  display: inline;
+  text-align: center;
+}
+
+.footer-copyright {
+  /* Positiong */
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  /* Font Style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+
 }
 
 
@@ -229,10 +351,11 @@ header,
 #vp-parent:after,
 #benefits-parent:after,
 #testimonial-parent:after,
-#signup-parent:after,
-footer:after,
+#sign-up-parent:after,
+.footer-adjust:after,
 .benefits-bullets-01:after,
-.benefits-bullets-02:after
+.benefits-bullets-02:after,
+.footer-social-parent:after
  {
   content: "";
   display: table;
