@@ -1,0 +1,86 @@
+<!-- HOMEWORK
+Look these things up!!!!
+<fieldset>
+<legemd>
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokeblog</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+
+    <!-- Header image -->
+    <header>
+      <img class="header-image" src="./images/gold-silver.jpg" alt="Pokemon Gold and Silver">
+    </header>
+
+    <!-- Header image -->
+    <section class="sign-up">
+      <h2 class="sign-up-heading">Coming Soon!</h2>
+      <p class="sign-up-description">Be the first to hear updates on these amazing games</p>
+
+      <!-- Form Start -->
+      <form class="sign-up-form" action="index.html" method="get">
+
+        <!-- First Name -->
+        <label for="first-name-input">First Name</label>
+        <input id="first-name-input" type="text" name="first_name" placeholder="Enter your fitst name">
+
+        <!-- Last Name -->
+        <label for="last-name-input">Last Name</label>
+        <input id="last-name-input" type="text" name="last_name" placeholder="Enter your last name">
+
+        <!-- Email Address -->
+        <label for="email-input">Email Address</label>
+        <input id="email-input" type="email" name="email_address" placeholder="enter an email address">
+
+        <!-- Birthday -->
+        <label for="birthday-input">Birthday</label>
+        <input id="birthday-input" type="date" name="birthday" max="2017-06-13" placeholder="enter your birthday">
+
+        <!-- Country -->
+        <label for="country-input">Country</label>
+        <select id="country-input" name="country" type="select">
+          <option value="japan">Japan</option>
+          <option value="usa">USA</option>
+          <option value="other">Other</option>
+        </select>
+
+        <!-- Experience -->
+        <label for="experience-input">How many years have you been playing Pokemon?</label>
+        <input id="experience-input" type="number" name="experience" placeholder="enter your experience">
+
+        <!-- Fav Game -->
+        <span>Which game are you excited about playing?</span>
+
+        <input id="game-input-gold" type="radio" name="favorite_game" value="gold">
+        <label for="game-input-gold">Pokemon Gold</label>
+
+        <input id="game-input-silver" type="radio" name="favorite_game" value="silver">
+        <label for="game-input-silver">Pokemon Silver</label>
+
+        <!-- What are you going to do? -->
+        <span>Which game are you excited about playing?</span>
+
+        <input id="what-input-train" type="checkbox" name="what_game" value="training">
+        <label for="what-input-train">I will be traning</label>
+
+        <input id="what-input-catch" type="checkbox" name="what_game" value="catching">
+        <label for="what-input-catch">I will be catching</label>
+
+        <input id="what-input-explore" type="checkbox" name="what_game" value="exploring">
+        <label for="what-input-explore">I will be exploring</label>
+
+        <!-- Submit -->
+        <input  type="submit" value="Ready? Go!">
+
+      </form>
+    </section>
+  </body>
+
+</html>
