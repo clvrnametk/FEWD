@@ -1,0 +1,14 @@
+BREAK POINTS
+  1440px
+  1024px
+  768px
+  480px
+
+ACCEPTANCE CRITERIA
+  Change Font size
+  Change Margins
+  Change Padding
+  Change Blog Section to single column
+  Content remains in appropriate divs
+  Content remains visible to the user
+  Content does not overlap
