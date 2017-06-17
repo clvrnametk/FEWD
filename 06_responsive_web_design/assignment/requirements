@@ -5,10 +5,10 @@ BREAK POINTS
   480px
 
 ACCEPTANCE CRITERIA
+  Content remains in appropriate divs
+  Content remains visible to the user
   Change Font size
   Change Margins
   Change Padding
   Change Blog Section to single column
-  Content remains in appropriate divs
-  Content remains visible to the user
   Content does not overlap

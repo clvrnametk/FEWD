@@ -1,9 +1,10 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: Responsive Web Redesign
+Client: Relaxr
+Author: Mike Morales
 Developer @GA in NYC
 */
+
 
 
 /******************************************
@@ -33,13 +34,15 @@ Developer @GA in NYC
 
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  padding: 0 0 .625rem .625rem; /* note the padding around a right floated image */
 }
 
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  padding: 0 .625rem .625rem 0; /* note the padding around a left floated image */
 }
+
+
 
 /******************************************
 /* BASE STYLES
@@ -47,7 +50,7 @@ Developer @GA in NYC
 
 body {
   color: #f0efef;
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 1.4;
   color: #606161;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -58,8 +61,9 @@ a {
 }
 
 
+
 /******************************************
-/* LAYOUT
+/* LAYOUT: Home Page
 /*******************************************/
 
 /* Center the container */
@@ -75,6 +79,8 @@ a {
   font-weight: 800;
 }
 
+
+/* GLOBAL: Header Nav Section */
 header {
   background: #033048;
   padding: 25px 0;
@@ -91,17 +97,23 @@ header nav {
 }
 header nav ul li {
   display: inline-block;
-  margin: 0 0 0 40px;
+  margin: 0 0 0 2.5rem;
   font-size: 24px;
 }
 header nav ul li a {
   color: #f9e42e;
 }
 
+
+/* HOME PAGE: Hero Module */
 #hero {
-  height: 700px;
-  background: url(../images/header_bg.jpg) no-repeat top center #131e27;
-  padding-top: 32px;
+  height: 100vh;
+  background-image:url(../images/header_bg.jpg);
+  background-color: #131e27;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 2rem;
 }
 
 #hero .logo {
@@ -118,8 +130,8 @@ header nav ul li a {
   border-radius: 5px;
   font-weight: 800;
   padding: 12px 0;
-  width: 280px;
-  font-size: 28px;
+  max-width: 17.5rem;
+  font-size: 1.75rem;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -133,22 +145,29 @@ header nav ul li a {
   color: #fff;
   font-size: 24px;
 }
+
+
+/* HOME PAGE: Benefits Module */
 #benefits {
   padding: 100px 0 80px;
 }
 h3 {
   color: #033048;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 #benefits p, #benefits ul {
-  width: 600px;
+  max-width: 600px;
 }
 #benefits ul {
   list-style: disc;
-  margin: 30px 0 0 80px;
+  margin: 1.875rem 0 0 80px;
 }
+
+
+
+/* HOME PAGE: Testimonial Module */
 #testimonial {
   background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
   padding: 70px 0 70px;
@@ -159,7 +178,7 @@ blockquote {
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  width: 580px;
+  max-width: 36.35rem;
   margin: 0 auto;
 }
 blockquote span {
@@ -167,43 +186,59 @@ blockquote span {
   display: block;
   font-style: normal;
 }
+
+
+/******************************************
+/* LAYOUT: Blog Page
+/*******************************************/
+
+
+/* BLOG PAGE: Content Section */
 #main {
   margin-top: 80px;
 }
+
+.blog-section-parent {
+  max-width: 60rem;
+}
+
 #posts {
-  width: 700px;
+  box-sizing: border-box;
+  width: 70%;
+  float: left;
   display: inline-block;
-  margin-right: 20px;
+  padding-right: 3rem;
   vertical-align: top;
 }
-#sidebar {
-  width: 240px;
-  display: inline-block;
-  vertical-align: top;
-}
+
 .post {
   border-bottom: 1px solid #043049;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
+
 .post h2 {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.3;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
+
 .post h2 a {
   color: #043049;
 }
 
 .post img {
-  margin-bottom: 30px;
+  width: 100%;
+  margin-bottom: 1.875rem;
 }
+
 .post p {
   font-size: 24px;
   line-height: 1.333;
   color: #606161;
 }
+
 .post p:first-of-type:first-letter {
   float: left;
   font-size: 80px;
@@ -213,10 +248,12 @@ blockquote span {
   padding-left: 3px;
   font-weight: 600;
 }
+
 .readmore {
   text-align: right;
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
+
 .readmore a {
   color: #043049;
   font-weight: 600;
@@ -227,7 +264,7 @@ blockquote span {
   font-weight: 800;
   padding: 12px 0;
   width: 280px;
-  font-size: 28px;
+  font-size: 1.75rem;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -242,32 +279,52 @@ blockquote span {
   font-size: 24px;
 }*/
 
+
+/* BLOG PAGE: Side Bar */
+#sidebar {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
 #sidebar h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 800;
   margin-bottom: 15px;
   color: #043049;
 }
+
 #sidebar ul {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
+
 #sidebar ul li a {
   color: #043049;
   font-size: 24px;
 }
+
 #sidebar p {
   font-size: 22px;
   line-height: 1.1;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
+
 #sidebar p a {
   color: #043049;
   font-weight: 600;
 }
 
+
+
+/******************************************
+/* LAYOUT: GLOBAL: Footer Section
+/*******************************************/
+
 #bottom-cta {
   background: #f9e42e;
-  padding: 30px;
+  padding: 1.875rem;
   text-align: center;
 }
 
@@ -276,17 +333,20 @@ footer {
   padding: 65px 0 45px;
   text-align: center;
 }
+
 footer .logo {
   color: #f9e42e;
-  margin-bottom: 68px;
+  margin-bottom: 4.25rem;
 }
+
 footer ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 26px 75px;
+  margin: 0 1.625rem 4.6875rem;
 }
+
 footer p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
   font-weight: 600;
 }
