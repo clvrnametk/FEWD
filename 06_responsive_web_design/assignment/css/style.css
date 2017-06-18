@@ -75,7 +75,7 @@ a {
   padding-right: 2rem;
 }
 .logo {
-  font-size: 48px;
+  font-size: 4.5rem;
   font-weight: 800;
 }
 
@@ -83,7 +83,7 @@ a {
 /* GLOBAL: Header Nav Section */
 header {
   background: #033048;
-  padding: 25px 32px;
+  padding: 1.5625rem 2rem;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
@@ -96,12 +96,12 @@ header .logo {
 
 header nav {
   float: right;
-  margin-top: 15px;
+  margin-top: .9375rem;
 }
 header nav ul li {
   display: inline-block;
   margin: 0 0 0 2.5rem;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 header nav ul li a {
   color: #f9e42e;
@@ -110,13 +110,19 @@ header nav ul li a {
 
 /* HOME PAGE: Hero Module */
 .header-hero-parent{
-  min-height: 600px;
+  min-height: 37.5rem;
   height: 100vh;
   box-sizing: border-box;
   background-image:url(../images/header_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.nav-hamburger {
+  float: right;
+  margin-top: 1rem;
+  width: 2rem;
 }
 
 #hero {
@@ -137,16 +143,16 @@ header nav ul li a {
   color: #fff;
 }
 #hero h2 {
-  font-size: 48px;
+  font-size: 4.5rem;
   text-align: center;
   color: #fff;
-  margin-bottom: 90px;
+  margin-bottom: 5.625rem;
   font-weight: 600;
 }
 .button {
-  border-radius: 5px;
+  border-radius: .3125rem;
   font-weight: 800;
-  padding: 12px 0;
+  padding: .75rem 0;
   max-width: 17.5rem;
   font-size: 1.75rem;
   text-align: center;
@@ -157,16 +163,12 @@ header nav ul li a {
   background: #f9e42e;
   color: #033048;
 }
-.blue {
-  background: #033048;
-  color: #fff;
-  font-size: 24px;
-}
+
 
 
 /* HOME PAGE: Benefits Module */
 #benefits {
-  padding: 100px 0 80px;
+  padding: 6.25rem 0 5rem;
 }
 h3 {
   color: #033048;
@@ -175,23 +177,28 @@ h3 {
   margin-bottom: 2.5rem;
 }
 #benefits p, #benefits ul {
-  max-width: 600px;
+  max-width: 43.75rem;
 }
 #benefits ul {
   list-style: disc;
-  margin: 1.875rem 0 0 80px;
+  margin: 1.875rem 0 0 5rem;
 }
 
 
 
 /* HOME PAGE: Testimonial Module */
 #testimonial {
-  background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
-  padding: 70px 0 70px;
+  background-image:url(../images/testimonial_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #071324;
+  padding: 4.375rem 0 4.375rem;
   color: #fff;
+  width: 100%;
 }
 blockquote {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 300;
   font-style: italic;
   text-align: center;
@@ -202,6 +209,7 @@ blockquote span {
   font-weight: 600;
   display: block;
   font-style: normal;
+  padding-top: .625rem;
 }
 
 
@@ -212,7 +220,7 @@ blockquote span {
 
 /* BLOG PAGE: Content Section */
 #main {
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 .blog-section-parent {
@@ -251,18 +259,18 @@ blockquote span {
 }
 
 .post p {
-  font-size: 24px;
-  line-height: 1.333;
+  font-size: 1.5rem;
+  line-height: 1.6;
   color: #606161;
 }
 
 .post p:first-of-type:first-letter {
   float: left;
-  font-size: 80px;
-  line-height: 65px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
+  font-size: 5rem;
+  line-height: 4.0625rem;
+  padding-top: .25rem;
+  padding-right: .5rem;
+  padding-left: .1875rem;
   font-weight: 600;
 }
 
@@ -276,25 +284,6 @@ blockquote span {
   font-weight: 600;
 }
 
-/*.button {
-  border-radius: 5px;
-  font-weight: 800;
-  padding: 12px 0;
-  width: 280px;
-  font-size: 1.75rem;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-}
-.yellow {
-  background: #f9e42e;
-  color: #033048;
-}
-.blue {
-  background: #033048;
-  color: #fff;
-  font-size: 24px;
-}*/
 
 
 /* BLOG PAGE: Side Bar */
@@ -309,7 +298,7 @@ blockquote span {
 #sidebar h3 {
   font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 15px;
+  margin-bottom: .9375rem;
   color: #043049;
 }
 
@@ -319,12 +308,12 @@ blockquote span {
 
 #sidebar ul li a {
   color: #043049;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 #sidebar p {
-  font-size: 22px;
-  line-height: 1.1;
+  font-size: 1.375rem;
+  line-height: 1.4;
   margin-bottom: 2.5rem;
 }
 
@@ -344,10 +333,14 @@ blockquote span {
   padding: 1.875rem;
   text-align: center;
 }
-
+.blue {
+  background: #033048;
+  color: #fff;
+  font-size: 1.5rem;
+}
 footer {
   background: #121212;
-  padding: 65px 0 45px;
+  padding: 4.0625rem 0 2.8125rem;
   text-align: center;
 }
 

@@ -1,23 +1,166 @@
-@media screen and (max-width: 1440px) {
+/******************************************
+/* LAYOUT: 1440rem Breakppoint
+/*******************************************/
+@media screen and (max-width: 90rem) {
+  /* GLOBAL: Navigation Section */
   header {
-    background-color: cyan;
+    background-color: ;
+  }
+  .nav-hamburger {
+    display: none;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+}
+
+
+/******************************************
+/* LAYOUT: 1024px Breakppoint
+/*******************************************/
+@media screen and (max-width: 64rem) {
+  /* GLOBAL: Navigation Section */
+  header {
+    background-color: ;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  /* BLOG: Post Section */
+  .post h2 {
+    font-size: 2.125rem;
+  }
+  .post p {
+    font-size: 1.125rem;
+  }
+  /* BLOG: Side Bar Section */
+  #sidebar h3 {
+    font-size: 1.75rem;
+  }
+  #sidebar ul li a {
+    font-size: 1.25rem;
+  }
+  #sidebar p {
+    font-size: 1.25rem;
   }
 }
 
-@media screen and (max-width: 1024px) {
+
+/******************************************
+/* LAYOUT: 768px Breakppoint
+/*******************************************/
+@media screen and (max-width: 48rem) {
+  /* GLOBAL: Navigation Section */
   header {
-    background-color: magenta;
+    background-color: ;
+  }
+  nav {
+    display: none;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  .nav-hamburger {
+    display: inline-block;
+  }
+  /* HOME: Hero Module */
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+  .button {
+    padding: .625rem 0;
+    max-width: 13rem;
+    font-size: 1.5rem;
+  }
+  /* HOME PAGE: Benefits Module */
+  h3 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+  }
+  #benefits p, #benefits ul {
+    font-size: 1.375rem;
+  }
+  /* HOME PAGE: Testimonial Module */
+  blockquote {
+    font-size: 1.875rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    max-width: 36.35rem;
+    margin: 0 auto;
+  }
+  blockquote span {
+    padding-top: .625rem;
+    font-size: 1.625rem;
+  }
+  .blue {
+    background: #033048;
+    color: #fff;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+  }
+
+
+  /* BLOG: Posts Section */
+  #posts {
+    width: 100%;
+    padding-right: 0rem;
+  }
+  /* BLOG: Side Bar Section */
+  #sidebar {
+    width: 100%;
+  }
+  .sidebar-sections {
+    box-sizing: border-box;
+    padding-right: 2rem;
+    width: 33%;
+    float: left;
+  }
+  .sidebar-sections img {
+    width: 100%;
+  }
+  #sidebar h3 {
+    font-size: 1.5rem;
+  }
+  #sidebar ul li a {
+    font-size: 1.125rem;
+  }
+  #sidebar p {
+    font-size: 1.125rem;
   }
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    background-color: yellow;
-  }
-}
 
-@media screen and (max-width: 480px) {
+/******************************************
+/* LAYOUT: 480px Breakppoint
+/*******************************************/
+@media screen and (max-width: 30rem) {
+  /* GLOBAL: Navigation Section */
   header {
-    background-color: red;
+    background-color: ;
+  }
+  nav {
+    display: none;
+  }
+  .nav-hamburger {
+    display: inline-block;
+  }
+  /* HOME PAGE: Benefits Module */
+  #benefits ul {
+    margin-left: 3.125rem;
+  }
+
+  /* BLOG: Side Bar Section */
+  .sidebar-sections {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-right: 0;
   }
 }
