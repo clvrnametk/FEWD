@@ -1,0 +1,79 @@
+/*
+Project Name: Startup Matchmaker
+Client: Startup Matchmaker
+Author: Mike Morales
+Developer @GA in NYC
+*/
+
+
+
+/******************************************
+/* LAYOUT: 1440rem Breakppoint
+/*******************************************/
+@media screen and (max-width: 90rem) {
+  /* GLOBAL: Navigation Section */
+
+}
+
+
+/******************************************
+/* LAYOUT: 1024px Breakpoint
+/*******************************************/
+@media screen and (max-width: 64rem) {
+  /* GLOBAL: Navigation Section */
+
+}
+
+
+/******************************************
+/* LAYOUT: 768px Breakppoint
+/*******************************************/
+@media screen and (max-width: 48rem) {
+  /* GLOBAL: Navigation Section */
+  header nav ul {
+    display: block;
+  }
+
+  header h2 {
+    width: 100%;
+    float: left;
+  }
+
+  header nav {
+    float: none;
+  }
+
+  .info-boxes {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+
+  .info-box button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info-border {
+    border-right-width: 0px;
+    border-right-color: lightgrey;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+  }
+
+}
+
+
+/******************************************
+/* LAYOUT: 480px Breakppoint
+/*******************************************/
+@media screen and (max-width: 30rem) {
+  /* GLOBAL: Navigation Section */
+
+}
