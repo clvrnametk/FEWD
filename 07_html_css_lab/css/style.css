@@ -36,61 +36,119 @@ h1, h2, h3, h4, h5, h5 {
   font-family: georgia;
 }
 
+button {
+  /* Styling */
+  font-size: 1.2rem;
+  letter-spacing: .04rem;
+}
+
+.global-btn {
+  font-family: impact;
+  text-transform: uppercase;
+  background-color: lightgrey;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom-width: 4px;
+  border-radius: 4px;
+  border-bottom-color: rgba(0, 0, 0, .3);
+}
+
+.global-yellow-btn {
+  background-color: yellow;
+  border-bottom-color: rgba(202, 206, 0, .5);
+}
+
+
+
 /******************************************
 /* GLOABL Header Nav
 /*******************************************/
 
 header {
+  /* Positioning */
   width: 100%;
   background-color: black;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
   padding-bottom: 40px;
+  /* Boarder Details */
+  border-bottom-width: 4px;
+  border-bottom-color: yellow;
+  border-style: solid;
 }
 
 header h2 {
-  width: 30%;
+  /* Positioning */
+  width: 50%;
   float: left;
+  border: 20px;
+  border-color: yellow;
 }
 
 header h2 a {
+  /* Styling */
   color: yellow;
   text-decoration: none;
   vertical-align: middle;
+  font-family: georgia;
+  font-size: 2rem;
 }
 
 header nav a {
+  /* Styling */
   color: white;
   text-decoration: none;
 }
 
 header nav ul {
+  /* Positioning */
   display: inline;
 }
 
 header nav ul li {
+  /* Positioning */
   display: inline;
-  padding-left: .5rem;
-  padding-left: .5rem;
-}
-
-button {
-  font-size: 16px;
+  padding-left: .625rem;
+  padding-left: .625rem;
 }
 
 .primary-navigation {
+  /* Styling */
   font-family: impact;
   text-transform: uppercase;
+  letter-spacing: .0625rem;
 }
 
 header nav {
+  /* Positioning */
   float: right;
 }
 
 .secondary-navigation {
+  /* Styling */
   color: white;
 }
+
+
+
+/******************************************
+/* GLOBAL: Footer Module
+/*******************************************/
+
+footer {
+  background-color: black;
+  padding: 20px;
+}
+
+footer p {
+  color: white;
+}
+
 
 
 /******************************************
@@ -98,6 +156,7 @@ header nav {
 /*******************************************/
 
 .subhead-quote {
+  /* Styling */
   font-family: georgia;
   font-weight: bold;
   font-style: italic;
@@ -105,16 +164,19 @@ header nav {
   width: 100%;
   background-color: lightgrey;
   text-align: center;
+  /* Positioning */
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .strikethrough {
+  /* Styling */
   color: grey;
   text-decoration: line-through;
 }
 
 .underline {
+  /* Styling */
   text-decoration: underline yellow;
 }
 
@@ -127,9 +189,9 @@ header nav {
 }
 
 .sign-up-call-to-action {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 5px black;
-  width: 30%;
+  width: 36%;
   float: right;
   padding: 20px;
   margin-top: 20px;
@@ -138,9 +200,10 @@ header nav {
 }
 
 .sign-up-call-to-action h1 {
-  font-family: impact;
-  font-size: 30px;
-  letter-spacing: 1px;
+  font-family: arial;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: .05rem;
   margin-bottom: 10px;
 }
 
@@ -148,20 +211,8 @@ header nav {
   line-height: 1.4;
   margin-bottom: 20px;
 }
-.sign-up-call-to-action button {
-  background-color: yellow;
-  font-family: impact;
-  text-transform: uppercase;
-  width: 100%;
-  max-width: 300px;
-  padding: 10px;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom-width: 4px;
-  border-radius: 4px;
-  border-bottom-color: rgba(202, 198, 35, 1);
-}
+
+
 
 /******************************************
 /* HOME PAGE: Info Module
@@ -194,32 +245,59 @@ header nav {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-.info-box button {
-  font-family: impact;
-  text-transform: uppercase;
-  background-color: lightgrey;
-  width: 100%;
-  max-width: 300px;
-  padding: 10px;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom-width: 4px;
-  border-radius: 4px;
-  border-bottom-color: rgba(0, 0, 0, .3);
-
-}
 
 
 /******************************************
-/* GLOBAL: Footer Module
+/* Developer: Tiles
 /*******************************************/
 
-footer {
-  background-color: black;
-  padding: 20px;
+.developers {
+  background-color: lightgrey;
+  padding: 2rem;
 }
 
-footer p {
+.developer-parent {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.developer-column {
+  width: 25%;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-bottom: 1rem;
+  float: left;
+}
+
+.developer {
+  padding: .625rem;
+  background-color: white;
+  width: 100%;
+}
+
+.developer img {
+  width: 100%;
+  margin-bottom: .625rem;
+}
+
+.developer p {
+  margin-bottom: .625rem;
+  font-size: 1.2rem;
+}
+
+.developer ul {
+  margin-bottom: 1rem;
+}
+.developer ul li {
+  display: inline;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  background-color: dimgrey;
+  border-radius: 1rem;
   color: white;
+  font-size: .75rem;
+  box-sizing: border-box;
 }
