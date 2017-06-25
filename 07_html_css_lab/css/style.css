@@ -42,6 +42,11 @@ button {
   letter-spacing: .04rem;
 }
 
+li {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .global-btn {
   font-family: impact;
   text-transform: uppercase;
@@ -254,7 +259,7 @@ footer p {
 /* Developer: Tiles
 /*******************************************/
 
-.developers {
+.grid-items {
   background-color: lightgrey;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -262,13 +267,13 @@ footer p {
   padding-bottom: 1.5rem;
 }
 
-.developer-parent {
+.grid-item-parent {
   max-width: 64rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.developer-column {
+.grid-item-column {
   width: 25%;
   padding-left: .5rem;
   padding-right: .5rem;
@@ -276,26 +281,26 @@ footer p {
   float: left;
 }
 
-.developer {
+.grid-item {
   padding: .625rem;
   background-color: white;
   width: 100%;
 }
 
-.developer img {
+.grid-item img {
   width: 100%;
   margin-bottom: .625rem;
 }
 
-.developer p {
-  margin-bottom: .625rem;
+.grid-item p {
+  margin-bottom: .25rem;
   font-size: 1.2rem;
 }
 
-.developer ul {
-  margin-bottom: 1rem;
+.grid-item ul {
+  margin-bottom: .5rem;
 }
-.developer ul li {
+.grid-item ul li {
   display: inline;
   padding-left: .75rem;
   padding-right: .75rem;
@@ -306,4 +311,6 @@ footer p {
   color: white;
   font-size: .75rem;
   box-sizing: border-box;
+  line-height: 1.8rem;
+
 }

@@ -23,14 +23,14 @@ Developer @GA in NYC
 
 
   /* GRID: 3 column */
-  .developers {
+  .grid-items {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1.5rem;
     padding-bottom: .5rem;
   }
 
-  .developer-column {
+  .grid-item-column {
     width: 33.33%;
   }
 }
@@ -79,7 +79,7 @@ Developer @GA in NYC
   }
 
   /* GRID: 2 column */
-  .developer-column {
+  .grid-item-column {
     width: 50%;
   }
 }
@@ -93,11 +93,11 @@ Developer @GA in NYC
   /* GLOBAL: Navigation Section */
 
   /* GRID: 1 column */
-  .developer-column {
+  .grid-item-column {
     width: 100%;
   }
 
-  .developer-parent {
+  .grid-item-parent {
     max-width: 25rem;
     margin-left: auto;
     margin-right: auto;
@@ -116,7 +116,7 @@ Developer @GA in NYC
   /* GLOBAL: Navigation Section */
 
   /* GRID: 1 column */
-  .developer-column {
+  .grid-item-column {
     width: 100%;
   }
 }
