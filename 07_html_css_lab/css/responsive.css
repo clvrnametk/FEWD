@@ -12,7 +12,6 @@ Developer @GA in NYC
 /*******************************************/
 @media screen and (max-width: 90rem) {
   /* GLOBAL: Navigation Section */
-
 }
 
 
@@ -22,6 +21,18 @@ Developer @GA in NYC
 @media screen and (max-width: 64rem) {
   /* GLOBAL: Navigation Section */
 
+
+  /* GRID: 3 column */
+  .developers {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+  }
+
+  .developer-column {
+    width: 33.33%;
+  }
 }
 
 
@@ -44,7 +55,7 @@ Developer @GA in NYC
   }
 
   .info-boxes {
-    max-width: 400px;
+    max-width: 25rem;
     margin-left: auto;
     margin-right: auto;
   }
@@ -67,6 +78,34 @@ Developer @GA in NYC
     border-bottom-style: solid;
   }
 
+  /* GRID: 2 column */
+  .developer-column {
+    width: 50%;
+  }
+}
+
+
+
+/******************************************
+/* LAYOUT: 560px Breakppoint
+/*******************************************/
+@media screen and (max-width: 40rem) {
+  /* GLOBAL: Navigation Section */
+
+  /* GRID: 1 column */
+  .developer-column {
+    width: 100%;
+  }
+
+  .developer-parent {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .global-btn {
+    max-width: 100%;
+  }
 }
 
 
@@ -76,4 +115,8 @@ Developer @GA in NYC
 @media screen and (max-width: 30rem) {
   /* GLOBAL: Navigation Section */
 
+  /* GRID: 1 column */
+  .developer-column {
+    width: 100%;
+  }
 }
