@@ -12,6 +12,10 @@ Developer @GA in NYC
 /*******************************************/
 @media screen and (max-width: 90rem) {
   /* GLOBAL: Navigation Section */
+  .nav-hamburger {
+    display: none;
+  }
+
 }
 
 
@@ -33,6 +37,14 @@ Developer @GA in NYC
   .grid-item-column {
     width: 33.33%;
   }
+
+  .nav-hamburger {
+    display: inline;
+  }
+
+  nav {
+    display: none;
+  }
 }
 
 
@@ -41,19 +53,29 @@ Developer @GA in NYC
 /*******************************************/
 @media screen and (max-width: 48rem) {
   /* GLOBAL: Navigation Section */
-  header nav ul {
-    display: block;
+  header {
+    /* Positioning */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  header h2 a {
+    /* Styling */
+    font-size: 1.75rem;
   }
 
-  header h2 {
-    width: 100%;
-    float: left;
+  /* HOME: Sub-Head Quote Section */
+  .subhead-quote {
+    /* Styling */
+    font-size: 1.5rem;
+    /* Positioning */
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
   }
 
-  header nav {
-    float: none;
+  /* HOME: Hero Section */
+  .hero {
+    margin-bottom: 2rem;
   }
-
   .info-boxes {
     max-width: 25rem;
     margin-left: auto;
@@ -62,6 +84,10 @@ Developer @GA in NYC
 
   .info-box {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 4rem;
   }
 
   .info-box button {
@@ -82,6 +108,16 @@ Developer @GA in NYC
   .grid-item-column {
     width: 50%;
   }
+
+  /* HOME PAGE: Hero Module */
+  .sign-up-call-to-action {
+    width: 50%;
+  }
+
+  .global-btn {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 
@@ -91,6 +127,19 @@ Developer @GA in NYC
 /*******************************************/
 @media screen and (max-width: 40rem) {
   /* GLOBAL: Navigation Section */
+  header h2 a {
+    /* Styling */
+    font-size: 1.5rem;
+  }
+
+  /* HOME: Sub-Head Quote Section */
+  .subhead-quote {
+    /* Styling */
+    font-size: 1.125rem;
+    /* Positioning */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
   /* GRID: 1 column */
   .grid-item-column {
@@ -106,17 +155,34 @@ Developer @GA in NYC
   .global-btn {
     max-width: 100%;
   }
-}
 
+  /* HOME PAGE: Hero Module */
+  .sign-up-call-to-action {
+    width: 60%;
+  }
+
+}
 
 /******************************************
 /* LAYOUT: 480px Breakppoint
 /*******************************************/
 @media screen and (max-width: 30rem) {
-  /* GLOBAL: Navigation Section */
+
+  /* HOME: Sub-Head Quote Section */
+  .subhead-quote {
+    /* Styling */
+    font-size: 1rem;
+  }
 
   /* GRID: 1 column */
   .grid-item-column {
     width: 100%;
   }
+
+  /* HOME PAGE: Hero Module */
+  .sign-up-call-to-action {
+    width: 100%;
+    margin: 0;
+  }
+
 }

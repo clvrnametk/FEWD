@@ -92,7 +92,6 @@ header {
 
 header h2 {
   /* Positioning */
-  width: 50%;
   float: left;
   border: 1.25rem;
   border-color: yellow;
@@ -141,6 +140,12 @@ header nav {
   /* Styling */
   color: white;
 }
+
+.nav-hamburger {
+  float: right;
+  width: 1.875rem;
+}
+
 
 
 
