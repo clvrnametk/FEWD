@@ -1,0 +1,32 @@
+* {
+  boxsizing:border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: arial;
+  text-align: center;color: white;
+  height: 80vh}
+.page {height: 85%;width: 90vw;margin: 0 auto;border: 4px solid white;}
+.box {height: 60px;width: 60px; border: 1px dashed black;display: flex;align-items: center;justify-content: center;}
+.red {background-color: rgba(255, 0, 0, 0.8);}
+.blue {background-color: rgba(0, 0, 255, 0.8);}
+.orange {background-color: rgba(255, 165, 0, 0.8);}
+.green {background-color: rgba(0, 255, 0, 0.8);}
+
+/*------------------------------------*/
+
+.one {
+  transition-color: 
+}
+
+.two {
+
+}
+.three {
+
+}
+
+.four {
+
+}

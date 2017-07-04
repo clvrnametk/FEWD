@@ -1,0 +1,198 @@
+body {
+  color: white;
+  font-family: Arial;
+  font-size: 24px;
+}
+
+h1 {
+  background-color: coral;
+  margin: 0;
+  padding: 24px;
+}
+
+section {
+  padding: 100px;
+}
+
+.two-columns {
+  background: slategray;
+  display: flex;
+  justify-content: center;
+}
+
+.three-columns {
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns-squished {
+  background: slategray;
+  display: flex;
+  justify-content: start;
+}
+
+.two-columns-space-between {
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns-space-around {
+  background: slategray;
+  display: flex;
+  justify-content: space-around;
+}
+
+.two-columns-reversed {
+  background: lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+.two-columns-vertical {
+  background: slategray;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.two-columns-vertical-reversed {
+  background: lightgray;
+  display: flex;
+}
+
+.two-columns-against-the-bottom { /* This rhymes, hehehe */
+  background: slategray;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.two-columns-multiline {
+  background: lightgray;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.color {
+  height: 200px;
+}
+
+.red {
+  background: firebrick;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+
+  box-sizing: border-box;
+}
+
+.blue {
+  background: navy;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+
+  box-sizing: border-box;
+}
+
+.blue2 {
+  background: navy;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+  order: -1;
+
+  box-sizing: border-box;
+}
+.orange {
+  background: orange;
+  width: 33.3%;
+}
+
+.orange2 {
+  background: orange;
+  width: 50%;
+}
+
+.yellow {
+  background: gold;
+  width: 33.3%;
+}
+
+.green {
+  background: forestgreen;
+  width: 33.3%;
+}
+
+.green2 {
+  background: forestgreen;
+  width: 50%;
+}
+
+.papayawhip {
+  background: papayawhip;
+  color: midnightblue;
+  width: 40%;
+}
+
+.cornflowerblue {
+  background: cornflowerblue;
+  width: 40%;
+}
+
+.lime {
+  background: lime;
+  width: 40%;
+}
+
+.fuchsia {
+  background: fuchsia;
+  width: 40%;
+}
+
+.coral {
+  background: coral;
+  width: 30%;
+}
+
+.skyblue {
+  background: skyblue;
+  width: 30%;
+}
+
+.gray-one {
+  color: black;
+  background: #fff;
+  width: 50%;
+}
+
+.gray-two {
+  color: black;
+  background: #eee;
+  width: 50%;
+}
+
+.gray-three {
+  color: black;
+  background: #ddd;
+  width: 50%;
+}
+
+.gray-four {
+  color: black;
+  background: #ccc;
+  width: 50%;
+}
+
+.gray-five {
+  color: black;
+  background: #bbb;
+  width: 50%;
+}
+
+.gray-six {
+  color: black;
+  background: #aaa;
+  width: 50%;
+}

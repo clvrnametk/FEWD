@@ -1,0 +1,176 @@
+/*
+Breakpoints: 1440, 1024, 768, 560, 480
+Project Name: Startup Matchmaker
+Client: Startup Matchmaker
+Author: Mike Morales
+Developer @GA in NYC
+*/
+
+
+
+/******************************************
+/* LAYOUT: 1440px Breakppoint
+/*******************************************/
+@media screen and (max-width: 90rem) {
+}
+
+
+
+/******************************************
+/* LAYOUT: 1024px Breakpoint
+/*******************************************/
+@media screen and (max-width: 64rem) {
+  /* GRID: 3 column */
+  .grid-items {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+  }
+  .grid-item-column {
+    width: 33.33%;
+  }
+  .nav-hamburger {
+    display: inline;
+  }
+  nav {
+    display: none;
+  }
+}
+
+
+
+/******************************************
+/* LAYOUT: 768px Breakppoint
+/*******************************************/
+@media screen and (max-width: 48rem) {
+  /* GLOBAL: Navigation Section */
+  header {
+    /* Positioning */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  header h2 a {
+    /* Styling */
+    font-size: 1.75rem;
+  }
+
+  /* HOME: Sub-Head Quote Section */
+  .subhead-quote {
+    /* Styling */
+    font-size: 1.5rem;
+    /* Positioning */
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+  }
+
+  /* HOME: Hero Section */
+  .hero {
+    margin-bottom: 2rem;
+  }
+  .info-boxes {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info-box {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+  .info-box button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .info-border {
+    border-right-width: 0px;
+    border-right-color: lightgrey;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: lightgrey;
+    border-bottom-style: solid;
+  }
+
+  /* GRID: 2 column */
+  .grid-item-column {
+    width: 50%;
+  }
+
+  /* HOME PAGE: Hero Module */
+  .sign-up-call-to-action {
+    width: 50%;
+  }
+  .global-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+/******************************************
+/* LAYOUT: 560px Breakppoint
+/*******************************************/
+@media screen and (max-width: 40rem) {
+  /* GLOBAL: Navigation Section */
+  header h2 a {
+    /* Styling */
+    font-size: 1.5rem;
+  }
+
+  /* HOME: Sub-Head Quote Section */
+  .subhead-quote {
+    /* Styling */
+    font-size: 1.125rem;
+    /* Positioning */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* GRID: 1 column */
+  .grid-item-column {
+    width: 100%;
+  }
+  .grid-item-parent {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Global BTN Changes */
+  .global-btn {
+    max-width: 100%;
+  }
+
+  /* HOME PAGE: Hero Module */
+  .sign-up-call-to-action {
+    width: 60%;
+  }
+}
+
+
+
+/******************************************
+/* LAYOUT: 480px Breakppoint
+/*******************************************/
+@media screen and (max-width: 30rem) {
+
+  /* HOME: Sub-Head Quote Section */
+  .subhead-quote {
+    /* Styling */
+    font-size: 1rem;
+  }
+
+  /* GRID: 1 column */
+  .grid-item-column {
+    width: 100%;
+  }
+
+  /* HOME PAGE: Hero Module */
+  .sign-up-call-to-action {
+    width: 100%;
+    margin: 0;
+  }
+}
