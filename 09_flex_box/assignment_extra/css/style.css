@@ -1,0 +1,14 @@
+/***********************
+python -m SimpleHTTPServer
+http://0.0.0.0:8000/
+***********************/
+
+body {
+  background-color: grey;
+  font-family: "proxima-nova", serif;
+}
+
+h1 {
+  font-family: "proxima-nova", serif;
+  font-weight: 600;
+  }
