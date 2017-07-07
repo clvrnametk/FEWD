@@ -57,10 +57,16 @@ if  (
           ) {
   console.log("You indicated that you wanted to purchase " + userQty + " of this item. You have to buy at least one to proceed with checkout.");
 } else if (
+          isNaN(prodPrice) ||
+          isNaN(prodInventory) ||
+          isNaN(userMoney) ||
+          isNaN(userQty)
+          /*
           typeof prodPrice != "number" ||
           typeof prodInventory != "number" ||
           typeof userMoney != "number" ||
           typeof userQty != "number"
+          */
           ){
   console.log("Please make sure to enter numbers only, refresh the page and try again.");
 } else {
