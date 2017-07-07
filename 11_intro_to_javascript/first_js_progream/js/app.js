@@ -12,3 +12,9 @@ console.log(a / b);
 
 console.log (course + " is " + course.length + " characters long");
 console.log (course + " is cool");
+
+if (course == "FEWD") {
+  console.log("YES!!");
+} else {
+  console.log("NO!!!!!");
+}
