@@ -1,0 +1,75 @@
+Purchase
+Write a program that does the following
+
+VARIABLES
+Asks the user the price of the product they're buying
+  prodPrice
+
+Asks the user how many items of the product are in inventory
+  prodInventory
+
+Asks the user how much money they have
+  userMoney
+
+Asks the user how many items they wish to buy
+  userQty
+
+CONDITIONS
+1
+If the user has enough money and the product is in stock
+(there are more than zero items), print "Purchase complete"
+  prodInventory >= 1
+  userQty >= 1
+  prodPrice > 0
+  userQty <= prodInventory
+  userMoney >= prodPrice * userQty
+
+2
+If the user doesn't have enough money, but there are
+enough items, print "Not enough money"
+  prodInventory >= 1
+  userQty >= 1
+  prodPrice > 0
+  userQty <= prodInventory
+  userMoney < prodPrice * userQty
+
+3
+If the user has enough money but there aren't
+enough items, print
+"Not enough inventory available, reduce your qty to # to proceed"
+  prodInventory >= 1
+  userQty >= 1
+  prodPrice > 0
+  userQty > prodInventory
+  userMoney >= prodPrice * userQty
+
+4
+not enough money and not enough inventory
+"No dice, not enough money or inventory available."
+  prodInventory >= 1
+  userQty >= 1
+  prodPrice > 0
+  userQty > prodInventory
+  userMoney < prodPrice * userQty
+
+5
+User entered 0 inventory "Sorry this item is out of stock"
+  prodInventory < 1
+  userQty >= 1
+  prodPrice < 0
+
+6
+User entered 0 for price
+"This item is free, there are # available, take as many as you want."
+  prodInventory >= 1
+  userQty >= 1
+  prodPrice == 0
+
+7
+User entered 0 qty "You have to buy at least one to proceed with checkout"
+  prodInventory >= 1
+  userQty < 1
+  prodPrice < 0
+
+ELSE
+  "Looks like you entered a few things in are were entered wrong, I will be adding validation for numbers soon"
