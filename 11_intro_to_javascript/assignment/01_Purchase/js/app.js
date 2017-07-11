@@ -1,8 +1,8 @@
 /* Variables */
-var prodPrice = parseInt( prompt("How much does the product cost?"))
-var prodInventory = parseInt( prompt("How many of this product are in stock?"))
-var userMoney = parseInt( prompt("How much money do you have?"))
-var userQty = parseInt( prompt("How many of this product would you like to purchase?"))
+var prodPrice = parseInt( prompt("How much does the product cost?"));
+var prodInventory = parseInt( prompt("How many of this product are in stock?"));
+var userMoney = parseInt( prompt("How much money do you have?"));
+var userQty = parseInt( prompt("How many of this product would you like to purchase?"));
 
 
 /* Print to Console */

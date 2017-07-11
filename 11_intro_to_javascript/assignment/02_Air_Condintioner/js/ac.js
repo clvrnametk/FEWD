@@ -1,6 +1,6 @@
 /* Variables */
-var currentTemp = parseInt( prompt("What is the current temperature?"))
-var desiredTemp = parseInt( prompt("What temperature would you like it to be?"))
+var currentTemp = parseInt( prompt("What is the current temperature?"));
+var desiredTemp = parseInt( prompt("What temperature would you like it to be?"));
 
 
 /* Print to Console */

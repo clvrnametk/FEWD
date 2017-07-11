@@ -1,8 +1,8 @@
 /* Variables */
-var tempNum = parseInt( prompt("What temperature do you want convert?" + "\n" + "Enter only numbers"))
-var tempConvert = prompt("What temperature scale would you like to convert that temperature to? Enter \"F to C\" or \"C to F\"")
-var tempConvertF = parseInt (((tempNum * 9) / 5) + 32) /* ParseInt to remove decimal pointsa from temp */
-var tempConvertC = parseInt (((tempNum - 32) * 5) / 9) /* ParseInt to remove decimal pointsa from temp */
+var tempNum = parseInt( prompt("What temperature do you want convert?" + "\n" + "Enter only numbers"));
+var tempConvert = prompt("What temperature scale would you like to convert that temperature to? Enter \"F to C\" or \"C to F\"");
+var tempConvertF = parseInt (((tempNum * 9) / 5) + 32); /* ParseInt to remove decimal pointsa from temp */
+var tempConvertC = parseInt (((tempNum - 32) * 5) / 9); /* ParseInt to remove decimal pointsa from temp */
 
 
 /* Print to Console */
