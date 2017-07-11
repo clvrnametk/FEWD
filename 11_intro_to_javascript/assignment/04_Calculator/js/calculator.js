@@ -27,7 +27,9 @@ if  (
           ) {
   console.log(mathOpMul);
 } else if (
-          mathOp == "/"
+          mathOp == "/" &&
+          numOne < 0 &&
+          numTwo < 0
           ) {
   console.log(mathOpDiv);
 } else if (
@@ -38,4 +40,6 @@ if  (
           mathOp == "-"
           ) {
   console.log(mathOpMin);
+} else {
+  console.log("Looks like you tried to divied number with 0." + "\n" + "Refresh and try again.");
 }
