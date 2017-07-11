@@ -11,8 +11,13 @@ var mathOpMin = numOne - numTwo
 
 /* Print to Console */
 if  (
-  mathOp == "*"
+  isNaN(numOne) ||
+  isNaN(numTwo)
     ) {
+  console.log("Looks like you didn't enter a number for you two number inputs." + "\n" + "Refresh and try again.");
+} else if (
+          mathOp == "*"
+          ) {
   console.log(mathOpMul);
 } else if (
           mathOp == "/"
