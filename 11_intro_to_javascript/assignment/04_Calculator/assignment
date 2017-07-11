@@ -1,17 +1,26 @@
-PROMPTS
-Asks the user the price of the product they're buying
+PROMPT
 
-Asks the user how many items of the product are in inventory
+readyStart
+"You will be asked to do the following:" + "\n" + "1. Enter a number" + "\n" + "2. Enter a math operation"  + "\n" + "3. Enter the second number." + "\n"  + "\n" + "Type \"OK\" when you are ready to begin"
 
-Asks the user how much money they have
+numOne
+"Enter your first number" + "\n" + "Please enter only numbers"
 
-Asks the user how many items they wish to buy
+mathOp
+"Enter a mathematical operation" + "\n" + "Please enter only numbers"
+
+
+numTwo
+"Enter your second number" + "\n" + "Please enter only numbers"
 
 
 
-PRINT
-If the user has enough money and the product is in stock (there are more than zero items), print "Purchase complete"
 
-If the user doesn't have enough money, but there are enough items, print "Not enough money"
-  
-If the user has enough money but there aren't enough items, print "Not enough inventory"
+Define a conditional statement that will perform the following calculator operations:
+
+addition
+subtraction
+multiplication
+division
+exponents
+Can you make sure that 0-division does not occur?
