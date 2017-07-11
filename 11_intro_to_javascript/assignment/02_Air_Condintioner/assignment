@@ -1,0 +1,27 @@
+Using booleans, and conditional statements create an air conditioner program.
+
+prompt the user for the current temperature
+  currentTemp
+prompt the user for the temperature they would like it to be.
+  desiredTemp
+
+1
+If the desired temperature is more than the current temperature
+  * Turning off the A/C! It's too cold!
+  currentTemp < desiredTemp
+
+2
+if the desired temperature is less than the current temperature
+  Turning on the A/C! It's boiling in here!
+  currentTemp < desiredTemp
+
+3
+else if the temperatures are the same
+  A perfect temperature. Keep the cool!
+  currentTemp == desiredTemp
+
+4
+Number not entered
+  Please make sure to enter numbers only, refresh the page and try again.
+  isNaN(currentTemp) ||
+  isNaN(desiredTemp) ||

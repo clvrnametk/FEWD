@@ -1,0 +1,27 @@
+Prompt
+"What temperature do you want convert? \n
+Enter only numbers"
+  tempNum
+
+Prompt
+"What temperature scale would you like to convert that temperature to? Enter \"F to C\" or \"C to F\""
+  tempConvert
+
+
+1
+If a user selects C to F then the temperature the user first input should be assumed to be in Celsius,
+and should therefore be converted to the Fahrenheit temperature.
+  tempConvert == "C to F"
+  "tempNum &deg;F is" + (((tempNum * 9) / 5) + 32) + "&deg;C"
+
+2
+else If a user selects F to C then the temperature the user first input should be assumed to be in Fahrenheit,
+and should therefore be converted to the Celsius temperature.
+  tempConvert == "F to C"
+  "tempNum &deg;C is" + (((tempNum - 32) * 5) / 9) + "&deg;F"
+
+3
+else
+  tempConvert != "F to C" ||
+  tempConvert != "C to F"
+  "Please make sure to enter either \"F to C\" or \"C to F\", refresh and try again please."

@@ -1,0 +1,17 @@
+PROMPTS
+Asks the user the price of the product they're buying
+
+Asks the user how many items of the product are in inventory
+
+Asks the user how much money they have
+
+Asks the user how many items they wish to buy
+
+
+
+PRINT
+If the user has enough money and the product is in stock (there are more than zero items), print "Purchase complete"
+
+If the user doesn't have enough money, but there are enough items, print "Not enough money"
+  
+If the user has enough money but there aren't enough items, print "Not enough inventory"
