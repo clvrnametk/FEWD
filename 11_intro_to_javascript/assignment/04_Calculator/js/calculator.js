@@ -16,6 +16,13 @@ if  (
     ) {
   console.log("Looks like you didn't enter a number for you two number inputs." + "\n" + "Refresh and try again.");
 } else if (
+          mathOp != "*" &&
+          mathOp != "/" &&
+          mathOp != "+" &&
+          mathOp != "-"
+          ) {
+  console.log("Look like you didn't enter a valid math operation." + "\n" + "Refresh and try again.");
+} else if (
           mathOp == "*"
           ) {
   console.log(mathOpMul);
