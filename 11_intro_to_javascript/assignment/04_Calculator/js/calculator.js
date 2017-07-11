@@ -7,6 +7,7 @@ var mathOpMul = numOne * numTwo
 var mathOpDiv = numOne / numTwo
 var mathOpPlu = numOne + numTwo
 var mathOpMin = numOne - numTwo
+var refreshPlese = "Refresh and try again."
 
 
 /* Print to Console */
@@ -14,14 +15,14 @@ if  (
   isNaN(numOne) ||
   isNaN(numTwo)
     ) {
-  console.log("Looks like you didn't enter a number for you two number inputs." + "\n" + "Refresh and try again.");
+  console.log("Looks like you didn't enter a number for you two number inputs." + "\n" + refreshPlese);
 } else if (
           mathOp != "*" &&
           mathOp != "/" &&
           mathOp != "+" &&
           mathOp != "-"
           ) {
-  console.log("Look like you didn't enter a valid math operation." + "\n" + "Refresh and try again.");
+  console.log("Look like you didn't enter a valid math operation." + "\n" + refreshPlese);
 } else if (
           mathOp == "*"
           ) {
@@ -41,5 +42,5 @@ if  (
           ) {
   console.log(mathOpMin);
 } else {
-  console.log("Looks like you tried to divied number with 0." + "\n" + "Refresh and try again.");
+  console.log("Looks like you tried to divied number with 0." + "\n" + refreshPlese);
 }
