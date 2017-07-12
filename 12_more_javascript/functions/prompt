@@ -1,0 +1,4 @@
+* Write a function `sumOfThree` that will accept three numbers
+  as input arguments, and return their sum
+* Write a function `productOfThree` that will accept three numbers as input
+  arguments, and return their product

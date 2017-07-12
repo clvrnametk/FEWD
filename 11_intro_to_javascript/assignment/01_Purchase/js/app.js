@@ -71,4 +71,4 @@ if  (
   console.log("Please make sure to enter numbers only, refresh the page and try again.");
 } else {
   console.log("Looks like you entered a few things in are were entered wrong, I will be adding validation for numbers soon");
-}
+};

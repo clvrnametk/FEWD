@@ -29,4 +29,4 @@ if  (
           isNaN(tempNum)
           ){
   console.log("Please to enter a number for the temperature you are looking to convert" + "\n" + "Please refresh the page and try again.");
-}
+};

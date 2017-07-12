@@ -23,4 +23,4 @@ if  (
   console.log("Please make sure to enter numbers only, refresh the page and try again.");
 } else {
   console.log("Looks like something went wrong, refresh and try again please.");
-}
+};

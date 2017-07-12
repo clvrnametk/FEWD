@@ -43,4 +43,4 @@ if  (
   console.log(mathOpMin);
 } else {
   console.log("Looks like you tried to divied number with 0." + "\n" + refreshPlese);
-}
+};
