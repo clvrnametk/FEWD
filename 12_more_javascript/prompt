@@ -1,5 +1,3 @@
-* Create an array with some of your favorite colors in it
-* Print the first color
-* Print the last color
-* Print how many colors you have in your array
-* Print a sentence for each color in your array - like "I like the color blue.", "I like the color orange"...
+* count_to_20: Write a "count to 20" program
+* count_even_to_50: Write a "count even numbers to 50" program (2, 4, 6, 8... 50)
+* countdown_from_10: Write a "count down from 10" program
