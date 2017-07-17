@@ -1,0 +1,55 @@
+// JQUERY
+$("css-selector");
+$("css-selector").html;
+$("css-selector");.html("replace html");
+
+
+// 
+.html("");      // add html to something
+.append("");    // Select a parent and add a child to the top of it
+.prepend("");   // Select a parent and add a child to the bottom of it
+.appendTo("");  // add a child to the top of a parent
+.prependTo(""); // Select a parent and add a child to the bottom of it
+.empty("");     // Remove all items inside of something
+.remove("");    // Remove self
+
+
+
+.addClass("");         // Allows you to add a class to an element
+.css("color: white");  // allows you to modify css on a page (try not to use this)
+.attr("");             // Allows you to get and set attributes
+    $(".google").attr("href", "http://apple.com");
+.children("");         // Find the children of a parent
+.parent("");           // Find the parent of a child
+.find("");             // Find something in a thing (look in)
+.closest("");          // Find something containing a thing (look out)
+
+
+
+$("<h1>");      // Add new things to the DOM using jquery
+
+
+
+ADD A NEW THING TO AN HTML PAGE
+  var newHeading = $("<h1>");
+  newHeading.html("this is a new tag OMG");
+  newHeading.prependTo("body");
+
+
+
+CLASS PROMPT
+  var newPar1 = $("<p>");
+  newPar1.html("My first new paragrph is here");
+  newPar1.prependTo("body");
+
+  var newLiFirst = $("<li>");
+  newLiFirst.html("a new list item for the first list");
+  newLiFirst.appendTo(".first");
+
+  var newLiSecond = $("<li>");
+  newLiSecond.html("a new list item for the second list");
+  newLiSecond.prependTo(".second");
+
+  var newCircle = $("<div>");
+  newCircle.addClass("circle");
+  newCircle.appendTo(".circles");

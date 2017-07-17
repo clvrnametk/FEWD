@@ -1,0 +1,68 @@
+body {
+  background-color: #004DD6;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: #004DD6;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.copy-container {
+  max-width: 45rem;
+  align-self: center;
+}
+
+.copy-container p {
+  width: 100%;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
+}
+
+.things {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.things-2 {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 40rem) {
+  .copy-container p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+}
