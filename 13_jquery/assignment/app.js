@@ -119,7 +119,7 @@ var renderStarterDoneItems = function() {
 
 // Remove a single item
 var removeItem = function(itemNumber) {
-
+  doneTopUl.children().eq(itemNumber).remove()
 };
 
 // Mark a single item as Done
