@@ -83,8 +83,8 @@ var completeAll = function() {
 var clearAll = function() {
   var doneTopUl = $('#done-column').find('ul');
   console.log(doneTopUl);
-  var list = document.getElementById('done-column');
-  console.log(list);
+  // var list = document.getElementById('done-column');
+  // console.log(list);
   doneTopUl.empty();
   // As long as <ul> has a child node, remove it
   // while (doneTopUl.children().length > 0) {
@@ -119,7 +119,7 @@ var renderStarterDoneItems = function() {
 
 // Remove a single item
 var removeItem = function(itemNumber) {
-  doneTopUl.children().eq(itemNumber).remove()
+  doneTopUl.children().eq(itemNumber).remove();
 };
 
 // Mark a single item as Done
@@ -129,7 +129,7 @@ var markAsDone = function(itemNumber) {
   item.removeClass('todo');
   item.addClass('done');
   var firstElSpan = item.find('span');
-  firstElSpan.html("Remove");
+  firstElSpan.html('Remove');
 };
 
 
