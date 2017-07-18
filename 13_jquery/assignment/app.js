@@ -22,7 +22,6 @@ var itemsStarterDone = [
   'checked it in the browser'
 ];
 
-
 // Done items Array
 var itemsDone = [
 ];
@@ -87,22 +86,20 @@ var clearAll = function() {
   var list = document.getElementById('done-column');
   console.log(list);
   doneTopUl.empty();
-  debugger
   // As long as <ul> has a child node, remove it
   // while (doneTopUl.children().length > 0) {
   //     doneTopUl.children().first().remove()
   // }
-//  for (var i = 0; i < items.length; i++) {
-//    var firstEl = toDoTopUl.find('li').eq(0);
-//    firstEl.removeChild(firstEl.childNodes[0])
-//  }
+  //  for (var i = 0; i < items.length; i++) {
+  //    var firstEl = toDoTopUl.find('li').eq(0);
+  //    firstEl.removeChild(firstEl.childNodes[0])
+  //  }
 };
 
 // Render All Items
 var renderAllItems = function() {
   for (var i = 0; i < items.length; i++) {
     addNewItem(itemsToDo[i]);
-    itemsStarterDone.pop(i);
   }
 };
 
@@ -120,6 +117,22 @@ var renderStarterDoneItems = function() {
   }
 };
 
+// Remove a single item
+var removeItem = function(itemNumber) {
+
+};
+
+// Mark a single item as Done
+var markAsDone = function(itemNumber) {
+  var item = toDoTopUl.find('li').eq(itemNumber);
+  item.prependTo(doneTopUl);
+  item.removeClass('todo');
+  item.addClass('done');
+  var firstElSpan = item.find('span');
+  firstElSpan.html("Remove");
+};
+
+
 
 
 //////////////////////
@@ -129,20 +142,3 @@ var renderStarterDoneItems = function() {
 // Render Starter Items
 renderStarterToDoItems();
 renderStarterDoneItems();
-
-
-
-
-// ----------------
-// BONUS
-// ----------------
-
-// What does .eq() do?
-
-// Remove a single item
-
-var removeItem = function(itemNumber) {};
-
-// Mark a single item as Done
-
-var markAsDone = function(itemNumber) {};
