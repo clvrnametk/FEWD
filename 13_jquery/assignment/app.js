@@ -20,6 +20,10 @@ var itemsDone = [
   'finished css additions',
   'checked it in the browser'
 ];
+
+
+
+
 //////////////////////
 // FUNCTIONS
 //////////////////////
@@ -40,7 +44,7 @@ var addNewItem = function(item) {
   newItemP.html(item);
   newItemP.appendTo(newItem);
   var newItemSpan = $('<span>');
-  newItemSpan.html('Mark as Done')
+  newItemSpan.html('Mark as Done');
   newItemSpan.addClass('label');
   newItemSpan.appendTo(newItem);
 };
@@ -61,7 +65,7 @@ var addDoneItem = function(item) {
   newItemP.html(item);
   newItemP.appendTo(newItem);
   var newItemSpan = $('<span>');
-  newItemSpan.html('Remove')
+  newItemSpan.html('Remove');
   newItemSpan.addClass('label');
   newItemSpan.appendTo(newItem);
 };
@@ -74,18 +78,30 @@ var completeAll = function() {
     firstEl.removeClass('todo');
     firstEl.addClass('done');
     var firstElSpan = firstEl.find('span');
-    firstElSpan.html("Remove")
+    firstElSpan.html("Remove");
   }
 };
 
 // Remove all items from "Done"
 var clearAll = function() {
-
+  var doneTopUlFun = $('#done-column').find('ul');
+  var list = document.getElementById("done-column");
+  // As long as <ul> has a child node, remove it
+  while (list.hasChildNodes()) {
+      list.removeChild(list.firstChild);
+  }
+//  for (var i = 0; i < items.length; i++) {
+//    var firstEl = toDoTopUl.find('li').eq(0);
+//    firstEl.removeChild(firstEl.childNodes[0])
+//  }
 };
 
 var renderAllItems = function(itemsToRender) {
 
 };
+
+
+
 
 //////////////////////
 // EXECUTION
