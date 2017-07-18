@@ -9,17 +9,22 @@ var toDoTopUl = $('#todo-column').find('ul');
 var doneTopUl = $('#done-column').find('ul');
 
 // Starter items Array
-var items = [
+var itemsStarterToDo = [
   'Wash the car',
   'Wrap things in ca$h',
   'Write blog post about selfies'
 ];
 
 // Done items Array
-var itemsDone = [
+var itemsStarterDone = [
   'Added new items to the list',
   'finished css additions',
   'checked it in the browser'
+];
+
+
+// Done items Array
+var itemsDone = [
 ];
 
 // To Do Items Array
@@ -33,14 +38,7 @@ var itemsToDo = [
 // FUNCTIONS
 //////////////////////
 
-//New to-do item function
-/*
-Should build the following HTML structure for a todo:
-<li class="item todo">
-	<p>Wrap things in ca$h</p>
-	<span class="label">Mark as Done</span>
-</li>
-*/
+//Add single to-do item function
 var addNewItem = function(item) {
   itemsToDo.push(item);
   var newItem = $('<li>');
@@ -55,15 +53,9 @@ var addNewItem = function(item) {
   newItemSpan.appendTo(newItem);
 };
 
-//New done item function
-/*
-Should build the following HTML structure for a done item:
-<li class="item done">
-<p>Learn JavaScript</p>
-<span class="label">Remove</span>
-</li>
-*/
+//Add Single done item function
 var addDoneItem = function(item) {
+  itemsDone.push(item);
   var newItem = $('<li>');
   newItem.addClass('item done');
   newItem.prependTo(doneTopUl);
@@ -78,7 +70,7 @@ var addDoneItem = function(item) {
 
 // Move all items from "Todo" to "Done"
 var completeAll = function() {
-  for (var i = 0; i < items.length; i++) {
+  for (var i = 0; i < itemsToDo.length; i++) {
     var firstEl = toDoTopUl.find('li').eq(0);
     firstEl.prependTo(doneTopUl);
     firstEl.removeClass('todo');
@@ -108,16 +100,23 @@ var clearAll = function() {
 var renderAllItems = function() {
   for (var i = 0; i < items.length; i++) {
     addNewItem(itemsToDo[i]);
+    itemsStarterDone.pop(i);
   }
 };
 
-// Render Start items
-var renderStarterItems = function() {
-  for (var i = 0; i < items.length; i++) {
-    addNewItem(items[i]);
+// Render Start To Do items
+var renderStarterToDoItems = function() {
+  for (var i = 0; i < itemsStarterToDo.length; i++) {
+    addNewItem(itemsStarterToDo[i]);
   }
 };
 
+// Render Start Done items
+var renderStarterDoneItems = function() {
+  for (var i = 0; i < itemsStarterDone.length; i++) {
+    addDoneItem(itemsStarterDone[i]);
+  }
+};
 
 
 
@@ -126,14 +125,10 @@ var renderStarterItems = function() {
 //////////////////////
 
 // Render Starter Items
-renderStarterItems();
-//for (var i = 0; i < items.length; i++) {
-//  renderAllItems(items[i]);
-//}
+renderStarterToDoItems();
+renderStarterDoneItems();
 
-for (var i = 0; i < itemsDone.length; i++) {
-  addDoneItem(itemsDone[i]);
-}
+
 
 
 // ----------------
