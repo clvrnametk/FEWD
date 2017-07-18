@@ -82,14 +82,16 @@ var completeAll = function() {
 
 // Remove all items from "Done"
 var clearAll = function() {
-  var doneTopUlFun = $('#done-column').find('ul');
+  var doneTopUl = $('#done-column').find('ul');
+  console.log(doneTopUl);
   var list = document.getElementById('done-column');
+  console.log(list);
+  doneTopUl.empty();
+  debugger
   // As long as <ul> has a child node, remove it
-  while (list.hasChildNodes()) {
-      if (list.firstChild != $('.column-heading')) {
-        list.removeChild(list.firstChild);
-      }
-  }
+  // while (doneTopUl.children().length > 0) {
+  //     doneTopUl.children().first().remove()
+  // }
 //  for (var i = 0; i < items.length; i++) {
 //    var firstEl = toDoTopUl.find('li').eq(0);
 //    firstEl.removeChild(firstEl.childNodes[0])
