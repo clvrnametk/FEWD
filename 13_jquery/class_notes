@@ -4,7 +4,7 @@ $("css-selector").html;
 $("css-selector");.html("replace html");
 
 
-// 
+//
 .html("");      // add html to something
 .append("");    // Select a parent and add a child to the top of it
 .prepend("");   // Select a parent and add a child to the bottom of it

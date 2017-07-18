@@ -15,10 +15,15 @@ var items = [
   'Write blog post about selfies'
 ];
 
+// Done items Array
 var itemsDone = [
   'Added new items to the list',
   'finished css additions',
   'checked it in the browser'
+];
+
+// To Do Items Array
+var itemsToDo = [
 ];
 
 
@@ -37,6 +42,7 @@ Should build the following HTML structure for a todo:
 </li>
 */
 var addNewItem = function(item) {
+  itemsToDo.push(item);
   var newItem = $('<li>');
   newItem.addClass('item todo');
   newItem.prependTo(toDoTopUl);
@@ -85,10 +91,12 @@ var completeAll = function() {
 // Remove all items from "Done"
 var clearAll = function() {
   var doneTopUlFun = $('#done-column').find('ul');
-  var list = document.getElementById("done-column");
+  var list = document.getElementById('done-column');
   // As long as <ul> has a child node, remove it
   while (list.hasChildNodes()) {
-      list.removeChild(list.firstChild);
+      if (list.firstChild != $('.column-heading')) {
+        list.removeChild(list.firstChild);
+      }
   }
 //  for (var i = 0; i < items.length; i++) {
 //    var firstEl = toDoTopUl.find('li').eq(0);
@@ -96,8 +104,18 @@ var clearAll = function() {
 //  }
 };
 
-var renderAllItems = function(itemsToRender) {
+// Render All Items
+var renderAllItems = function() {
+  for (var i = 0; i < items.length; i++) {
+    addNewItem(itemsToDo[i]);
+  }
+};
 
+// Render Start items
+var renderStarterItems = function() {
+  for (var i = 0; i < items.length; i++) {
+    addNewItem(items[i]);
+  }
 };
 
 
@@ -108,9 +126,10 @@ var renderAllItems = function(itemsToRender) {
 //////////////////////
 
 // Render Starter Items
-for (var i = 0; i < items.length; i++) {
-  addNewItem(items[i]);
-}
+renderStarterItems();
+//for (var i = 0; i < items.length; i++) {
+//  renderAllItems(items[i]);
+//}
 
 for (var i = 0; i < itemsDone.length; i++) {
   addDoneItem(itemsDone[i]);
