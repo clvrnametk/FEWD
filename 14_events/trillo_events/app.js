@@ -99,3 +99,25 @@ var markAsDone = function(itemNumber) {
 };
 
 renderAllItems();
+
+$('.todo .label').click(function(){
+  var itemNum = $(this).index();
+  markAsDone(itemNum - 1);
+});
+
+$('.done .label').click(function(){
+  var itemNum = $(this).index();
+  removeItem(itemNum - 1);
+});
+$('#new-item-button').click(function(){
+  var userInput = $('#new-item-text').val();
+  addNewItem(userInput);
+});
+
+$('.clear-todo').click(function(){
+  completeAll();
+});
+
+$('.clear-done').click(function(){
+  clearAll();
+});
