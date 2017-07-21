@@ -50,8 +50,8 @@ showSavings();
 // When I click the Checking Deposit button...
 $('#checking .deposit').click(function(){
   // add the amount to the checking balance
-  var amount = $('#checking .amount').val()
-  checkingBalance = parseInt(checkingBalance) + parseInt(amount);
+  var amount = parseInt($('#checking .amount').val())
+  checkingBalance = checkingBalance + amount;
   // show the checking balance
   showChecking();
   $('#checking .amount').val('');
@@ -63,7 +63,7 @@ $('#checking .withdraw').click(function(){
   if (checkingBalance >= $('#checking .amount').val()) {
     // subtract the amount from the checking balance
     var amount = $('#checking .amount').val()
-    checkingBalance = parseInt(checkingBalance) - parseInt(amount);
+    checkingBalance = checkingBalance - amount;
     // show the checking balance
   }
   showChecking();
@@ -75,7 +75,7 @@ $('#checking .withdraw').click(function(){
 $('#savings .deposit').click(function(){
   // add the amount to the checking balance
   var amount = $('#savings .amount').val()
-  savingsBalance = parseInt(savingsBalance) + parseInt(amount);
+  savingsBalance = savingsBalance + amount;
   // show the checking balance
   showSavings();
   $('#savings .amount').val('');
@@ -88,7 +88,7 @@ $('#savings .withdraw').click(function(){
   if (savingsBalance >= $('#savings .amount').val()) {
     // subtract the amount from the checking balance
     var amount = $('#savings .amount').val()
-    savingsBalance = parseInt(savingsBalance) - parseInt(amount);
+    savingsBalance = savingsBalance - amount;
     // show the checking balance
     showSavings();
     $('#savings .amount').val('');
