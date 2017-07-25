@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../images/dark-triangles.png");
+  background-repeat: repeat;
+  color: white;
+}
+
+header {
+  background: #fcfcfc;
+  box-shadow: 0 0 5px #fff;
+  color: #333;
+}
+
+.navigation-icon {
+  width: 40px;
+}
+
+main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
