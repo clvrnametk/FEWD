@@ -1,0 +1,61 @@
+* When I click the navigation icon,
+  * add the class `navigation-enabled` to the navigation (the nav tag) if it doesn't already have it
+  * remove the class `navigation-enabled` from the navigation if it has it
+* Add a CSS rule that sets the background color to `#444` if an element has
+  class `navigation` and `navigation-enabled`.
+* Add a CSS rule that sets the display property of `navigation-items` to `block`
+  if its parent has the `navigation-enabled` class
+---
+Bonus
+* Add positioning to the `navigation-items` such that the menu drops down over the
+  header, instead of expanding the header
+* Provide a suitable color and background color to the `navigation-items`
+
+
+
+
+
+
+
+* When I click the Tweed button, I want my Tweed to appear at the top of my
+  activity
+* I shouldn't be able to make empty Tweeds
+---
+Bonus
+* I shouldn't be able to type more than 140 characters
+* Add a "characters remaining" span below the tweed textarea that displays
+  how many more characters I can type
+* Add a timestamp in each Tweed stating when I Tweeded it
+
+
+
+
+
+
+
+* Make the `navigation-items` unordered list disappear by
+  assigning `display: none` to it
+
+* Use flexbox to place the "Tweedr" title on the left,
+  and the navigation on the right
+
+* Use flexbox to move the profile to the left,
+  and the tweets to the right (30%-60%)
+
+* Make the profile picture circular with a white border of 5px
+
+* Make the text area and button occupy the full width of the profile
+  * You can change the font size, colors, etc. Go crazy!
+* Make the tweeds black on white background
+* Increase the tweeds font size, and ensure that there is enough space between
+  the tweed text and tweed edges
+* Apply a gray border between tweeds. The first tweed should not have a border
+  above it, and the last tweed should not have a border below it.
+
+---
+Bonus
+* Create a gray X at the top right corner of every tweet
+  (find out what "&times;"
+  is and use it)
+* Disable the resizing ability of the textarea
+* Ensure that the textarea has 3 lines of height, instead of 2

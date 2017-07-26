@@ -1,3 +1,38 @@
+/*
+Project Name: Startup Matchmaker
+Client: Startup Matchmaker
+Author: Mike Morales
+Developer @GA in NYC
+*/
+
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+
+/******************************************
+/* Tweed Page
+/*******************************************/
+
 body {
   margin: 0;
   padding: 0;
@@ -7,9 +42,15 @@ body {
 }
 
 header {
-  background: #fcfcfc;
+  background: #222;
   box-shadow: 0 0 5px #fff;
-  color: #333;
+  color: #white;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* Flex Box */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-icon {
@@ -20,4 +61,91 @@ main {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  /* Flex Box */
+  display: flex;
+  justify-content: space-between;
+  padding: 12px
+}
+
+.navigation-items {
+  display: none;
+}
+
+.navigation-enabled {
+  display: block;
+}
+
+.profile{
+  width: 30%;
+}
+
+.activity {
+  width: 60%;
+}
+
+.tweeds {
+  margin: 0;
+  padding: 0;
+}
+
+.tweed {
+  background-color: white;
+  color: black;
+
+  font-size: 20px;
+
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  position: relative;
+}
+
+.tweed:not(:last-child) {
+  border-bottom: 1px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: #222;
+  border-style: solid;
+}
+
+.tweed-text {
+  padding-left: 20px;
+}
+
+.tweed-x {
+  margin: 0px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.profile-picture img {
+  width: 100%;
+  border-radius: 100%;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  margin-bottom: 10px;
+}
+
+
+.new-tweed-text {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: none;
+  font-size: 16px;
+}
+
+.new-tweed-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: orange;
+  border: none;
+  border-bottom: 4px solid darkorange;
 }
