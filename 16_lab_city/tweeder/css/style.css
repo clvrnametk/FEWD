@@ -69,9 +69,29 @@ main {
 
 .navigation-items {
   display: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-color: #555;
+  padding: 20px;
+  list-style-type: none;
+  line-height: 30px;
+
 }
 
 .navigation-enabled {
+  display: block;
+}
+
+.navigation {
+  position: relative;
+}
+
+.navigation.navigation-enabled {
+  background-color: #444;
+}
+
+.navigation-enabled .navigation-items{
   display: block;
 }
 

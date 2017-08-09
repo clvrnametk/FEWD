@@ -10,7 +10,7 @@ Developer @GA in NYC
 /******************************************
 /* LAYOUT: 1440rem Breakppoint
 /*******************************************/
-@media screen and (max-width: 90rem) {
+@media screen and (min-width: 90rem) {
   /* GLOBAL: Navigation Section */
   header {
     background-color: ;

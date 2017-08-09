@@ -43,41 +43,45 @@ var addNewTweed = function(userInput) {
 };
 
 // check length
-// $(".new-tweed-text").keypress(function(event) {
-//   var userInput = $('.new-tweed-text').val();
-//
-//   if (userInput.length < 6) {
-//     console.log('stop typing');
-//   } else {
-//     event.preventDefault();
-//   }
-//   console.log("You typed something!!");
-// });
+// I shouldn't be able to type more than 140 characters
+$('.new-tweed-text').on('input', function() {
+  // Check to see if this works
+  console.log($('.new-tweed-text').val());
 
-// $(".new-tweed-text").keypress(function(event) {
-//   var userInput = $(".new-tweed-text").val();
-//
-//   if (userInput.length > 5) {
-//     event.preventDefault();
-//   } else {
-//     var remainingChar = 6 -
-//   }
-// });
+  // Store input value in a string
+  var userInput = $('.new-tweed-text').val();
 
+  if (userInput.length > 6) {
+    // test to see if it is working
+    console.log('stop typing!!');
+    //var to store the original substring: 6 characters
+    var correctLength = userInput.substring(0, 6);
+    // reinsert the correct length text
+    $(".new-tweed-text").val(correctLength);
+    // check to see that the correct length is all good
+    console.log('you should have stopped at' + correctLength);
+    // Just checking to see that not enough has been entered
+  } else {
+    console.log('keep typing');
+  }
+});
+
+
+// Toggle Class using this method
 $('.navigation-icon').click(function() {
   // listen for click
   console.log('nav clicked!!');
-
+  var navigation = $('.navigation');
   // add class
-  if ($('.navigation-items').hasClass('navigation-enabled')) {
-      $('.navigation-items').removeClass('navigation-enabled')
-  } else {
-    $('.navigation-items').addClass('navigation-enabled')
-  }
+  navigation.toggleClass('navigation-enabled');
+  // if (navigation.hasClass('navigation-enabled')) {
+  //     navigation.removeClass('navigation-enabled')
+  // } else {
+  //   navigation.addClass('navigation-enabled')
+  // }
 
 });
 
-// I shouldn't be able to type more than 140 characters
 
 
 
